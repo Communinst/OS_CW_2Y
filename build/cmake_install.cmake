@@ -1,8 +1,8 @@
-# Install script for directory: X:/Coding/CPP/mp_os
+# Install script for directory: X:/Coding/CPP/CourseWorkOpS
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/mp_os")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/os_cw")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,27 +39,27 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/allocator/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/allocator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/arithmetic/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/associative_container/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/associative_container/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/common/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/logger/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/logger/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/flyweight/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -70,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "X:/Coding/CPP/mp_os/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "X:/Coding/CPP/CourseWorkOpS/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

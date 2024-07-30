@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_lggr_clnt_lggr.a CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_lggr_clnt_lggr.a

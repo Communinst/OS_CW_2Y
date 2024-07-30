@@ -53,88 +53,37 @@ RM = X:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\mp_os
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\mp_os\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: allocator/all
-all: arithmetic/all
 all: associative_container/all
 all: common/all
 all: logger/all
+all: flyweight/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: allocator/preinstall
-preinstall: arithmetic/preinstall
 preinstall: associative_container/preinstall
 preinstall: common/preinstall
 preinstall: logger/preinstall
+preinstall: flyweight/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: allocator/clean
-clean: arithmetic/clean
 clean: associative_container/clean
 clean: common/clean
 clean: logger/clean
+clean: flyweight/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory _deps/googletest-build
-
-# Recursive "all" directory target.
-_deps/googletest-build/all: _deps/googletest-build/googlemock/all
-.PHONY : _deps/googletest-build/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/preinstall: _deps/googletest-build/googlemock/preinstall
-.PHONY : _deps/googletest-build/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/clean: _deps/googletest-build/googlemock/clean
-.PHONY : _deps/googletest-build/clean
-
-#=============================================================================
-# Directory level rules for directory _deps/googletest-build/googlemock
-
-# Recursive "all" directory target.
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-_deps/googletest-build/googlemock/all: _deps/googletest-build/googletest/all
-.PHONY : _deps/googletest-build/googlemock/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/googlemock/preinstall: _deps/googletest-build/googletest/preinstall
-.PHONY : _deps/googletest-build/googlemock/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
-_deps/googletest-build/googlemock/clean: _deps/googletest-build/googletest/clean
-.PHONY : _deps/googletest-build/googlemock/clean
-
-#=============================================================================
-# Directory level rules for directory _deps/googletest-build/googletest
-
-# Recursive "all" directory target.
-_deps/googletest-build/googletest/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-_deps/googletest-build/googletest/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-.PHONY : _deps/googletest-build/googletest/all
-
-# Recursive "preinstall" directory target.
-_deps/googletest-build/googletest/preinstall:
-.PHONY : _deps/googletest-build/googletest/preinstall
-
-# Recursive "clean" directory target.
-_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
-_deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : _deps/googletest-build/googletest/clean
 
 #=============================================================================
 # Directory level rules for directory _deps/json-build
@@ -176,7 +125,7 @@ allocator/clean: allocator/allocator_global_heap/clean
 # Directory level rules for directory allocator/allocator
 
 # Recursive "all" directory target.
-allocator/allocator/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
+allocator/allocator/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
 .PHONY : allocator/allocator/all
 
 # Recursive "preinstall" directory target.
@@ -184,243 +133,108 @@ allocator/allocator/preinstall:
 .PHONY : allocator/allocator/preinstall
 
 # Recursive "clean" directory target.
-allocator/allocator/clean: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/clean
+allocator/allocator/clean: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/clean
 .PHONY : allocator/allocator/clean
 
 #=============================================================================
 # Directory level rules for directory allocator/allocator_boundary_tags
 
 # Recursive "all" directory target.
-allocator/allocator_boundary_tags/all: allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all
-allocator/allocator_boundary_tags/all: allocator/allocator_boundary_tags/tests/all
+allocator/allocator_boundary_tags/all: allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all
 .PHONY : allocator/allocator_boundary_tags/all
 
 # Recursive "preinstall" directory target.
-allocator/allocator_boundary_tags/preinstall: allocator/allocator_boundary_tags/tests/preinstall
+allocator/allocator_boundary_tags/preinstall:
 .PHONY : allocator/allocator_boundary_tags/preinstall
 
 # Recursive "clean" directory target.
-allocator/allocator_boundary_tags/clean: allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/clean
-allocator/allocator_boundary_tags/clean: allocator/allocator_boundary_tags/tests/clean
+allocator/allocator_boundary_tags/clean: allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/clean
 .PHONY : allocator/allocator_boundary_tags/clean
-
-#=============================================================================
-# Directory level rules for directory allocator/allocator_boundary_tags/tests
-
-# Recursive "all" directory target.
-allocator/allocator_boundary_tags/tests/all: allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all
-allocator/allocator_boundary_tags/tests/all: _deps/googletest-build/all
-.PHONY : allocator/allocator_boundary_tags/tests/all
-
-# Recursive "preinstall" directory target.
-allocator/allocator_boundary_tags/tests/preinstall: _deps/googletest-build/preinstall
-.PHONY : allocator/allocator_boundary_tags/tests/preinstall
-
-# Recursive "clean" directory target.
-allocator/allocator_boundary_tags/tests/clean: allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/clean
-allocator/allocator_boundary_tags/tests/clean: _deps/googletest-build/clean
-.PHONY : allocator/allocator_boundary_tags/tests/clean
 
 #=============================================================================
 # Directory level rules for directory allocator/allocator_global_heap
 
 # Recursive "all" directory target.
-allocator/allocator_global_heap/all: allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all
-allocator/allocator_global_heap/all: allocator/allocator_global_heap/tests/all
+allocator/allocator_global_heap/all: allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all
 .PHONY : allocator/allocator_global_heap/all
 
 # Recursive "preinstall" directory target.
-allocator/allocator_global_heap/preinstall: allocator/allocator_global_heap/tests/preinstall
+allocator/allocator_global_heap/preinstall:
 .PHONY : allocator/allocator_global_heap/preinstall
 
 # Recursive "clean" directory target.
-allocator/allocator_global_heap/clean: allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/clean
-allocator/allocator_global_heap/clean: allocator/allocator_global_heap/tests/clean
+allocator/allocator_global_heap/clean: allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/clean
 .PHONY : allocator/allocator_global_heap/clean
-
-#=============================================================================
-# Directory level rules for directory allocator/allocator_global_heap/tests
-
-# Recursive "all" directory target.
-allocator/allocator_global_heap/tests/all: allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all
-.PHONY : allocator/allocator_global_heap/tests/all
-
-# Recursive "preinstall" directory target.
-allocator/allocator_global_heap/tests/preinstall:
-.PHONY : allocator/allocator_global_heap/tests/preinstall
-
-# Recursive "clean" directory target.
-allocator/allocator_global_heap/tests/clean: allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/clean
-.PHONY : allocator/allocator_global_heap/tests/clean
-
-#=============================================================================
-# Directory level rules for directory arithmetic
-
-# Recursive "all" directory target.
-arithmetic/all: arithmetic/big_integer/all
-.PHONY : arithmetic/all
-
-# Recursive "preinstall" directory target.
-arithmetic/preinstall: arithmetic/big_integer/preinstall
-.PHONY : arithmetic/preinstall
-
-# Recursive "clean" directory target.
-arithmetic/clean: arithmetic/big_integer/clean
-.PHONY : arithmetic/clean
-
-#=============================================================================
-# Directory level rules for directory arithmetic/big_integer
-
-# Recursive "all" directory target.
-arithmetic/big_integer/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
-arithmetic/big_integer/all: arithmetic/big_integer/tests/all
-.PHONY : arithmetic/big_integer/all
-
-# Recursive "preinstall" directory target.
-arithmetic/big_integer/preinstall: arithmetic/big_integer/tests/preinstall
-.PHONY : arithmetic/big_integer/preinstall
-
-# Recursive "clean" directory target.
-arithmetic/big_integer/clean: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/clean
-arithmetic/big_integer/clean: arithmetic/big_integer/tests/clean
-.PHONY : arithmetic/big_integer/clean
-
-#=============================================================================
-# Directory level rules for directory arithmetic/big_integer/tests
-
-# Recursive "all" directory target.
-arithmetic/big_integer/tests/all: arithmetic/big_integer/tests/big_integer/all
-.PHONY : arithmetic/big_integer/tests/all
-
-# Recursive "preinstall" directory target.
-arithmetic/big_integer/tests/preinstall: arithmetic/big_integer/tests/big_integer/preinstall
-.PHONY : arithmetic/big_integer/tests/preinstall
-
-# Recursive "clean" directory target.
-arithmetic/big_integer/tests/clean: arithmetic/big_integer/tests/big_integer/clean
-.PHONY : arithmetic/big_integer/tests/clean
-
-#=============================================================================
-# Directory level rules for directory arithmetic/big_integer/tests/big_integer
-
-# Recursive "all" directory target.
-arithmetic/big_integer/tests/big_integer/all: arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all
-.PHONY : arithmetic/big_integer/tests/big_integer/all
-
-# Recursive "preinstall" directory target.
-arithmetic/big_integer/tests/big_integer/preinstall:
-.PHONY : arithmetic/big_integer/tests/big_integer/preinstall
-
-# Recursive "clean" directory target.
-arithmetic/big_integer/tests/big_integer/clean: arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/clean
-.PHONY : arithmetic/big_integer/tests/big_integer/clean
 
 #=============================================================================
 # Directory level rules for directory associative_container
 
 # Recursive "all" directory target.
-associative_container/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
-associative_container/all: associative_container/hash_table/all
+associative_container/all: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
 associative_container/all: associative_container/search_tree/all
 .PHONY : associative_container/all
 
 # Recursive "preinstall" directory target.
-associative_container/preinstall: associative_container/hash_table/preinstall
 associative_container/preinstall: associative_container/search_tree/preinstall
 .PHONY : associative_container/preinstall
 
 # Recursive "clean" directory target.
-associative_container/clean: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/clean
-associative_container/clean: associative_container/hash_table/clean
+associative_container/clean: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/clean
 associative_container/clean: associative_container/search_tree/clean
 .PHONY : associative_container/clean
-
-#=============================================================================
-# Directory level rules for directory associative_container/hash_table
-
-# Recursive "all" directory target.
-associative_container/hash_table/all: associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all
-associative_container/hash_table/all: associative_container/hash_table/tests/all
-.PHONY : associative_container/hash_table/all
-
-# Recursive "preinstall" directory target.
-associative_container/hash_table/preinstall: associative_container/hash_table/tests/preinstall
-.PHONY : associative_container/hash_table/preinstall
-
-# Recursive "clean" directory target.
-associative_container/hash_table/clean: associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/clean
-associative_container/hash_table/clean: associative_container/hash_table/tests/clean
-.PHONY : associative_container/hash_table/clean
-
-#=============================================================================
-# Directory level rules for directory associative_container/hash_table/tests
-
-# Recursive "all" directory target.
-associative_container/hash_table/tests/all: associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all
-.PHONY : associative_container/hash_table/tests/all
-
-# Recursive "preinstall" directory target.
-associative_container/hash_table/tests/preinstall:
-.PHONY : associative_container/hash_table/tests/preinstall
-
-# Recursive "clean" directory target.
-associative_container/hash_table/tests/clean: associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/clean
-.PHONY : associative_container/hash_table/tests/clean
 
 #=============================================================================
 # Directory level rules for directory associative_container/search_tree
 
 # Recursive "all" directory target.
-associative_container/search_tree/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
-associative_container/search_tree/all: associative_container/search_tree/binary_search_tree/all
+associative_container/search_tree/all: associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/all: associative_container/search_tree/indexing_tree/all
 .PHONY : associative_container/search_tree/all
 
 # Recursive "preinstall" directory target.
-associative_container/search_tree/preinstall: associative_container/search_tree/binary_search_tree/preinstall
+associative_container/search_tree/preinstall: associative_container/search_tree/indexing_tree/preinstall
 .PHONY : associative_container/search_tree/preinstall
 
 # Recursive "clean" directory target.
-associative_container/search_tree/clean: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/clean
-associative_container/search_tree/clean: associative_container/search_tree/binary_search_tree/clean
+associative_container/search_tree/clean: associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/clean
+associative_container/search_tree/clean: associative_container/search_tree/indexing_tree/clean
 .PHONY : associative_container/search_tree/clean
 
 #=============================================================================
-# Directory level rules for directory associative_container/search_tree/binary_search_tree
+# Directory level rules for directory associative_container/search_tree/indexing_tree
 
 # Recursive "all" directory target.
-associative_container/search_tree/binary_search_tree/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
-associative_container/search_tree/binary_search_tree/all: associative_container/search_tree/binary_search_tree/tests/all
-.PHONY : associative_container/search_tree/binary_search_tree/all
+associative_container/search_tree/indexing_tree/all: associative_container/search_tree/indexing_tree/b_tree/all
+.PHONY : associative_container/search_tree/indexing_tree/all
 
 # Recursive "preinstall" directory target.
-associative_container/search_tree/binary_search_tree/preinstall: associative_container/search_tree/binary_search_tree/tests/preinstall
-.PHONY : associative_container/search_tree/binary_search_tree/preinstall
+associative_container/search_tree/indexing_tree/preinstall: associative_container/search_tree/indexing_tree/b_tree/preinstall
+.PHONY : associative_container/search_tree/indexing_tree/preinstall
 
 # Recursive "clean" directory target.
-associative_container/search_tree/binary_search_tree/clean: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/clean
-associative_container/search_tree/binary_search_tree/clean: associative_container/search_tree/binary_search_tree/tests/clean
-.PHONY : associative_container/search_tree/binary_search_tree/clean
+associative_container/search_tree/indexing_tree/clean: associative_container/search_tree/indexing_tree/b_tree/clean
+.PHONY : associative_container/search_tree/indexing_tree/clean
 
 #=============================================================================
-# Directory level rules for directory associative_container/search_tree/binary_search_tree/tests
+# Directory level rules for directory associative_container/search_tree/indexing_tree/b_tree
 
 # Recursive "all" directory target.
-associative_container/search_tree/binary_search_tree/tests/all: associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all
-.PHONY : associative_container/search_tree/binary_search_tree/tests/all
+associative_container/search_tree/indexing_tree/b_tree/all: associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all
+.PHONY : associative_container/search_tree/indexing_tree/b_tree/all
 
 # Recursive "preinstall" directory target.
-associative_container/search_tree/binary_search_tree/tests/preinstall:
-.PHONY : associative_container/search_tree/binary_search_tree/tests/preinstall
+associative_container/search_tree/indexing_tree/b_tree/preinstall:
+.PHONY : associative_container/search_tree/indexing_tree/b_tree/preinstall
 
 # Recursive "clean" directory target.
-associative_container/search_tree/binary_search_tree/tests/clean: associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/clean
-.PHONY : associative_container/search_tree/binary_search_tree/tests/clean
+associative_container/search_tree/indexing_tree/b_tree/clean: associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/clean
+.PHONY : associative_container/search_tree/indexing_tree/b_tree/clean
 
 #=============================================================================
 # Directory level rules for directory common
 
 # Recursive "all" directory target.
-common/all: common/CMakeFiles/mp_os_cmmn.dir/all
+common/all: common/CMakeFiles/os_cw_cmmn.dir/all
 .PHONY : common/all
 
 # Recursive "preinstall" directory target.
@@ -428,8 +242,55 @@ common/preinstall:
 .PHONY : common/preinstall
 
 # Recursive "clean" directory target.
-common/clean: common/CMakeFiles/mp_os_cmmn.dir/clean
+common/clean: common/CMakeFiles/os_cw_cmmn.dir/clean
 .PHONY : common/clean
+
+#=============================================================================
+# Directory level rules for directory flyweight
+
+# Recursive "all" directory target.
+flyweight/all: flyweight/flyweight_string/all
+.PHONY : flyweight/all
+
+# Recursive "preinstall" directory target.
+flyweight/preinstall: flyweight/flyweight_string/preinstall
+.PHONY : flyweight/preinstall
+
+# Recursive "clean" directory target.
+flyweight/clean: flyweight/flyweight_string/clean
+.PHONY : flyweight/clean
+
+#=============================================================================
+# Directory level rules for directory flyweight/flyweight_string
+
+# Recursive "all" directory target.
+flyweight/flyweight_string/all: flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
+flyweight/flyweight_string/all: flyweight/flyweight_string/singleton/all
+.PHONY : flyweight/flyweight_string/all
+
+# Recursive "preinstall" directory target.
+flyweight/flyweight_string/preinstall: flyweight/flyweight_string/singleton/preinstall
+.PHONY : flyweight/flyweight_string/preinstall
+
+# Recursive "clean" directory target.
+flyweight/flyweight_string/clean: flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/clean
+flyweight/flyweight_string/clean: flyweight/flyweight_string/singleton/clean
+.PHONY : flyweight/flyweight_string/clean
+
+#=============================================================================
+# Directory level rules for directory flyweight/flyweight_string/singleton
+
+# Recursive "all" directory target.
+flyweight/flyweight_string/singleton/all: flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all
+.PHONY : flyweight/flyweight_string/singleton/all
+
+# Recursive "preinstall" directory target.
+flyweight/flyweight_string/singleton/preinstall:
+.PHONY : flyweight/flyweight_string/singleton/preinstall
+
+# Recursive "clean" directory target.
+flyweight/flyweight_string/singleton/clean: flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/clean
+.PHONY : flyweight/flyweight_string/singleton/clean
 
 #=============================================================================
 # Directory level rules for directory logger
@@ -453,42 +314,24 @@ logger/clean: logger/logger/clean
 # Directory level rules for directory logger/client_logger
 
 # Recursive "all" directory target.
-logger/client_logger/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-logger/client_logger/all: logger/client_logger/tests/all
+logger/client_logger/all: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all
 logger/client_logger/all: _deps/json-build/all
 .PHONY : logger/client_logger/all
 
 # Recursive "preinstall" directory target.
-logger/client_logger/preinstall: logger/client_logger/tests/preinstall
 logger/client_logger/preinstall: _deps/json-build/preinstall
 .PHONY : logger/client_logger/preinstall
 
 # Recursive "clean" directory target.
-logger/client_logger/clean: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/clean
-logger/client_logger/clean: logger/client_logger/tests/clean
+logger/client_logger/clean: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/clean
 logger/client_logger/clean: _deps/json-build/clean
 .PHONY : logger/client_logger/clean
-
-#=============================================================================
-# Directory level rules for directory logger/client_logger/tests
-
-# Recursive "all" directory target.
-logger/client_logger/tests/all: logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all
-.PHONY : logger/client_logger/tests/all
-
-# Recursive "preinstall" directory target.
-logger/client_logger/tests/preinstall:
-.PHONY : logger/client_logger/tests/preinstall
-
-# Recursive "clean" directory target.
-logger/client_logger/tests/clean: logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/clean
-.PHONY : logger/client_logger/tests/clean
 
 #=============================================================================
 # Directory level rules for directory logger/logger
 
 # Recursive "all" directory target.
-logger/logger/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
+logger/logger/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 .PHONY : logger/logger/all
 
 # Recursive "preinstall" directory target.
@@ -496,606 +339,307 @@ logger/logger/preinstall:
 .PHONY : logger/logger/preinstall
 
 # Recursive "clean" directory target.
-logger/logger/clean: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/clean
+logger/logger/clean: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/clean
 .PHONY : logger/logger/clean
 
 #=============================================================================
-# Target rules for target allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir
+# Target rules for target allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir
 
 # All Build rule for target.
-allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/depend
-	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=9,10,11 "Built target mp_os_allctr_allctr"
-.PHONY : allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
+allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/depend
+	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=1,2,3 "Built target os_cw_allctr_allctr"
+.PHONY : allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
 
 # Build rule for subdir invocation for target.
-allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/rule
+allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule
 
 # Convenience name for target.
-mp_os_allctr_allctr: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/rule
-.PHONY : mp_os_allctr_allctr
+os_cw_allctr_allctr: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule
+.PHONY : os_cw_allctr_allctr
 
 # clean rule for target.
-allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/clean
-.PHONY : allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/clean
+allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/clean
+.PHONY : allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/clean
 
 #=============================================================================
-# Target rules for target allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir
+# Target rules for target allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir
 
 # All Build rule for target.
-allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\mp_os_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/depend
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\mp_os_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=12,13 "Built target mp_os_allctr_allctr_bndr_tgs"
-.PHONY : allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all
+allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
+allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
+allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\os_cw_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/depend
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\os_cw_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=4,5 "Built target os_cw_allctr_allctr_bndr_tgs"
+.PHONY : allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all
 
 # Build rule for subdir invocation for target.
-allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/rule
+allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/rule
 
 # Convenience name for target.
-mp_os_allctr_allctr_bndr_tgs: allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/rule
-.PHONY : mp_os_allctr_allctr_bndr_tgs
+os_cw_allctr_allctr_bndr_tgs: allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/rule
+.PHONY : os_cw_allctr_allctr_bndr_tgs
 
 # clean rule for target.
-allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/clean:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\mp_os_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/clean
-.PHONY : allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/clean
+allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\os_cw_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/clean
+.PHONY : allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/clean
 
 #=============================================================================
-# Target rules for target allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir
+# Target rules for target allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir
 
 # All Build rule for target.
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/all
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\tests\CMakeFiles\mp_os_allctr_allctr_bndr_tgs_tests.dir\build.make allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\tests\CMakeFiles\mp_os_allctr_allctr_bndr_tgs_tests.dir\build.make allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=14,15 "Built target mp_os_allctr_allctr_bndr_tgs_tests"
-.PHONY : allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all
+allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
+allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
+allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\os_cw_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/depend
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\os_cw_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=6,7 "Built target os_cw_allctr_allctr_glbl_hp"
+.PHONY : allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all
 
 # Build rule for subdir invocation for target.
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 21
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/rule
+allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/rule
 
 # Convenience name for target.
-mp_os_allctr_allctr_bndr_tgs_tests: allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/rule
-.PHONY : mp_os_allctr_allctr_bndr_tgs_tests
+os_cw_allctr_allctr_glbl_hp: allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/rule
+.PHONY : os_cw_allctr_allctr_glbl_hp
 
 # clean rule for target.
-allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\tests\CMakeFiles\mp_os_allctr_allctr_bndr_tgs_tests.dir\build.make allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/clean
-.PHONY : allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/clean
+allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\os_cw_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/clean
+.PHONY : allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/clean
 
 #=============================================================================
-# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+# Target rules for target associative_container/CMakeFiles/os_cw_assctv_cntnr.dir
 
 # All Build rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=1,2 "Built target gmock"
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
+associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
+	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\os_cw_assctv_cntnr.dir\build.make associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/depend
+	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\os_cw_assctv_cntnr.dir\build.make associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=8 "Built target os_cw_assctv_cntnr"
+.PHONY : associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
 
 # Build rule for subdir invocation for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
+associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/rule
 
 # Convenience name for target.
-gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
-.PHONY : gmock
+os_cw_assctv_cntnr: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/rule
+.PHONY : os_cw_assctv_cntnr
 
 # clean rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean
+associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\os_cw_assctv_cntnr.dir\build.make associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/clean
+.PHONY : associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/clean
 
 #=============================================================================
-# Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+# Target rules for target associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir
 
 # All Build rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=3,4 "Built target gmock_main"
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
+associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
+associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
+associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
+associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
+	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/depend
+	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=9 "Built target os_cw_assctv_cntnr_srch_tr"
+.PHONY : associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all
 
 # Build rule for subdir invocation for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
+associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/rule
 
 # Convenience name for target.
-gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
-.PHONY : gmock_main
+os_cw_assctv_cntnr_srch_tr: associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/rule
+.PHONY : os_cw_assctv_cntnr_srch_tr
 
 # clean rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
-.PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
+associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/clean
+.PHONY : associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/clean
 
 #=============================================================================
-# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+# Target rules for target associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir
 
 # All Build rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=5,6 "Built target gtest"
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all
+	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/depend
+	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=10 "Built target os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr"
+.PHONY : associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all
 
 # Build rule for subdir invocation for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule
 
 # Convenience name for target.
-gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
-.PHONY : gtest
+os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr: associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule
+.PHONY : os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr
 
 # clean rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/clean
+.PHONY : associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/clean
 
 #=============================================================================
-# Target rules for target _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+# Target rules for target common/CMakeFiles/os_cw_cmmn.dir
 
 # All Build rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=7,8 "Built target gtest_main"
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+common/CMakeFiles/os_cw_cmmn.dir/all:
+	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/depend
+	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=11,12,13 "Built target os_cw_cmmn"
+.PHONY : common/CMakeFiles/os_cw_cmmn.dir/all
 
 # Build rule for subdir invocation for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
+common/CMakeFiles/os_cw_cmmn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/CMakeFiles/os_cw_cmmn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : common/CMakeFiles/os_cw_cmmn.dir/rule
 
 # Convenience name for target.
-gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
-.PHONY : gtest_main
+os_cw_cmmn: common/CMakeFiles/os_cw_cmmn.dir/rule
+.PHONY : os_cw_cmmn
 
 # clean rule for target.
-_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
-.PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
+common/CMakeFiles/os_cw_cmmn.dir/clean:
+	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/clean
+.PHONY : common/CMakeFiles/os_cw_cmmn.dir/clean
 
 #=============================================================================
-# Target rules for target allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir
+# Target rules for target logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir
 
 # All Build rule for target.
-allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\mp_os_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/depend
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\mp_os_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=16,17 "Built target mp_os_allctr_allctr_glbl_hp"
-.PHONY : allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all
+logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
+logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
+	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/depend
+	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=18,19,20 "Built target os_cw_lggr_clnt_lggr"
+.PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all
 
 # Build rule for subdir invocation for target.
-allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/rule
+logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule
 
 # Convenience name for target.
-mp_os_allctr_allctr_glbl_hp: allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/rule
-.PHONY : mp_os_allctr_allctr_glbl_hp
+os_cw_lggr_clnt_lggr: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule
+.PHONY : os_cw_lggr_clnt_lggr
 
 # clean rule for target.
-allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\mp_os_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/clean
-.PHONY : allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/clean
+logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/clean
+.PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/clean
 
 #=============================================================================
-# Target rules for target allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir
+# Target rules for target logger/logger/CMakeFiles/os_cw_lggr_lggr.dir
 
 # All Build rule for target.
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/all
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\tests\CMakeFiles\mp_os_allctr_allctr_glbl_hp_tests.dir\build.make allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\tests\CMakeFiles\mp_os_allctr_allctr_glbl_hp_tests.dir\build.make allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=18,19 "Built target mp_os_allctr_allctr_glbl_hp_tests"
-.PHONY : allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all
+logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all:
+	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/depend
+	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=21,22,23,24 "Built target os_cw_lggr_lggr"
+.PHONY : logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 
 # Build rule for subdir invocation for target.
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 21
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/rule
+logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule
 
 # Convenience name for target.
-mp_os_allctr_allctr_glbl_hp_tests: allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/rule
-.PHONY : mp_os_allctr_allctr_glbl_hp_tests
+os_cw_lggr_lggr: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule
+.PHONY : os_cw_lggr_lggr
 
 # clean rule for target.
-allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\tests\CMakeFiles\mp_os_allctr_allctr_glbl_hp_tests.dir\build.make allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/clean
-.PHONY : allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/clean
+logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/clean
+.PHONY : logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/clean
 
 #=============================================================================
-# Target rules for target arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir
+# Target rules for target flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir
 
 # All Build rule for target.
-arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-	$(MAKE) $(MAKESILENT) -f arithmetic\big_integer\CMakeFiles\mp_os_arthmtc_bg_intgr.dir\build.make arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/depend
-	$(MAKE) $(MAKESILENT) -f arithmetic\big_integer\CMakeFiles\mp_os_arthmtc_bg_intgr.dir\build.make arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=20,21 "Built target mp_os_arthmtc_bg_intgr"
-.PHONY : arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
+flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all:
+	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\CMakeFiles\os_cw_flwght_str.dir\build.make flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/depend
+	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\CMakeFiles\os_cw_flwght_str.dir\build.make flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=16,17 "Built target os_cw_flwght_str"
+.PHONY : flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
 
 # Build rule for subdir invocation for target.
-arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/rule
+flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/rule
 
 # Convenience name for target.
-mp_os_arthmtc_bg_intgr: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/rule
-.PHONY : mp_os_arthmtc_bg_intgr
+os_cw_flwght_str: flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/rule
+.PHONY : os_cw_flwght_str
 
 # clean rule for target.
-arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f arithmetic\big_integer\CMakeFiles\mp_os_arthmtc_bg_intgr.dir\build.make arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/clean
-.PHONY : arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/clean
+flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/clean:
+	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\CMakeFiles\os_cw_flwght_str.dir\build.make flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/clean
+.PHONY : flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/clean
 
 #=============================================================================
-# Target rules for target arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir
+# Target rules for target flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir
 
 # All Build rule for target.
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/all
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f arithmetic\big_integer\tests\big_integer\CMakeFiles\mp_os_arthmtc_bg_intgr_tests_bgnt.dir\build.make arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/depend
-	$(MAKE) $(MAKESILENT) -f arithmetic\big_integer\tests\big_integer\CMakeFiles\mp_os_arthmtc_bg_intgr_tests_bgnt.dir\build.make arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=22,23 "Built target mp_os_arthmtc_bg_intgr_tests_bgnt"
-.PHONY : arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all
+flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all: flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
+	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\singleton\CMakeFiles\os_cw_flwght_sngltn.dir\build.make flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/depend
+	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\singleton\CMakeFiles\os_cw_flwght_sngltn.dir\build.make flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=14,15 "Built target os_cw_flwght_sngltn"
+.PHONY : flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all
 
 # Build rule for subdir invocation for target.
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 21
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/rule
+flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/rule
 
 # Convenience name for target.
-mp_os_arthmtc_bg_intgr_tests_bgnt: arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/rule
-.PHONY : mp_os_arthmtc_bg_intgr_tests_bgnt
+os_cw_flwght_sngltn: flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/rule
+.PHONY : os_cw_flwght_sngltn
 
 # clean rule for target.
-arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/clean:
-	$(MAKE) $(MAKESILENT) -f arithmetic\big_integer\tests\big_integer\CMakeFiles\mp_os_arthmtc_bg_intgr_tests_bgnt.dir\build.make arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/clean
-.PHONY : arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/clean
-
-#=============================================================================
-# Target rules for target associative_container/CMakeFiles/mp_os_assctv_cntnr.dir
-
-# All Build rule for target.
-associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\mp_os_assctv_cntnr.dir\build.make associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/depend
-	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\mp_os_assctv_cntnr.dir\build.make associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=24 "Built target mp_os_assctv_cntnr"
-.PHONY : associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
-
-# Build rule for subdir invocation for target.
-associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/rule
-
-# Convenience name for target.
-mp_os_assctv_cntnr: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/rule
-.PHONY : mp_os_assctv_cntnr
-
-# clean rule for target.
-associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\mp_os_assctv_cntnr.dir\build.make associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/clean
-.PHONY : associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/clean
-
-#=============================================================================
-# Target rules for target associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir
-
-# All Build rule for target.
-associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
-associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f associative_container\hash_table\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl.dir\build.make associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/depend
-	$(MAKE) $(MAKESILENT) -f associative_container\hash_table\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl.dir\build.make associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=25 "Built target mp_os_assctv_cntnr_hsh_tbl"
-.PHONY : associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all
-
-# Build rule for subdir invocation for target.
-associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/rule
-
-# Convenience name for target.
-mp_os_assctv_cntnr_hsh_tbl: associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/rule
-.PHONY : mp_os_assctv_cntnr_hsh_tbl
-
-# clean rule for target.
-associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/clean:
-	$(MAKE) $(MAKESILENT) -f associative_container\hash_table\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl.dir\build.make associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/clean
-.PHONY : associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/clean
-
-#=============================================================================
-# Target rules for target associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir
-
-# All Build rule for target.
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir\build.make associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir\build.make associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=26,27 "Built target mp_os_assctv_cntnr_hsh_tbl_tests"
-.PHONY : associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all
-
-# Build rule for subdir invocation for target.
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 21
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/rule
-
-# Convenience name for target.
-mp_os_assctv_cntnr_hsh_tbl_tests: associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/rule
-.PHONY : mp_os_assctv_cntnr_hsh_tbl_tests
-
-# clean rule for target.
-associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir\build.make associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/clean
-.PHONY : associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/clean
-
-#=============================================================================
-# Target rules for target associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir
-
-# All Build rule for target.
-associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
-associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/depend
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=28 "Built target mp_os_assctv_cntnr_srch_tr"
-.PHONY : associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
-
-# Build rule for subdir invocation for target.
-associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/rule
-
-# Convenience name for target.
-mp_os_assctv_cntnr_srch_tr: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/rule
-.PHONY : mp_os_assctv_cntnr_srch_tr
-
-# clean rule for target.
-associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/clean
-.PHONY : associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/clean
-
-#=============================================================================
-# Target rules for target associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir
-
-# All Build rule for target.
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\binary_search_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir\build.make associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/depend
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\binary_search_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir\build.make associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=29 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr"
-.PHONY : associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
-
-# Build rule for subdir invocation for target.
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/rule
-
-# Convenience name for target.
-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/rule
-.PHONY : mp_os_assctv_cntnr_srch_tr_bnr_srch_tr
-
-# clean rule for target.
-associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\binary_search_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir\build.make associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/clean
-.PHONY : associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/clean
-
-#=============================================================================
-# Target rules for target associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir
-
-# All Build rule for target.
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\build.make associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\build.make associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=30,31 "Built target mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests"
-.PHONY : associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all
-
-# Build rule for subdir invocation for target.
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 22
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/rule
-
-# Convenience name for target.
-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests: associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/rule
-.PHONY : mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
-
-# clean rule for target.
-associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\build.make associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/clean
-.PHONY : associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/clean
-
-#=============================================================================
-# Target rules for target common/CMakeFiles/mp_os_cmmn.dir
-
-# All Build rule for target.
-common/CMakeFiles/mp_os_cmmn.dir/all:
-	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/depend
-	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=32,33,34 "Built target mp_os_cmmn"
-.PHONY : common/CMakeFiles/mp_os_cmmn.dir/all
-
-# Build rule for subdir invocation for target.
-common/CMakeFiles/mp_os_cmmn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/CMakeFiles/mp_os_cmmn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : common/CMakeFiles/mp_os_cmmn.dir/rule
-
-# Convenience name for target.
-mp_os_cmmn: common/CMakeFiles/mp_os_cmmn.dir/rule
-.PHONY : mp_os_cmmn
-
-# clean rule for target.
-common/CMakeFiles/mp_os_cmmn.dir/clean:
-	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/clean
-.PHONY : common/CMakeFiles/mp_os_cmmn.dir/clean
-
-#=============================================================================
-# Target rules for target logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir
-
-# All Build rule for target.
-logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/depend
-	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=35,36,37 "Built target mp_os_lggr_clnt_lggr"
-.PHONY : logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-
-# Build rule for subdir invocation for target.
-logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/rule
-
-# Convenience name for target.
-mp_os_lggr_clnt_lggr: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/rule
-.PHONY : mp_os_lggr_clnt_lggr
-
-# clean rule for target.
-logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/clean
-.PHONY : logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/clean
-
-#=============================================================================
-# Target rules for target logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir
-
-# All Build rule for target.
-logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: common/CMakeFiles/mp_os_cmmn.dir/all
-logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/all
-logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(MAKE) $(MAKESILENT) -f logger\client_logger\tests\CMakeFiles\mp_os_lggr_clnt_lggr_tests.dir\build.make logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/depend
-	$(MAKE) $(MAKESILENT) -f logger\client_logger\tests\CMakeFiles\mp_os_lggr_clnt_lggr_tests.dir\build.make logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=38,39 "Built target mp_os_lggr_clnt_lggr_tests"
-.PHONY : logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all
-
-# Build rule for subdir invocation for target.
-logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/rule
-
-# Convenience name for target.
-mp_os_lggr_clnt_lggr_tests: logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/rule
-.PHONY : mp_os_lggr_clnt_lggr_tests
-
-# clean rule for target.
-logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f logger\client_logger\tests\CMakeFiles\mp_os_lggr_clnt_lggr_tests.dir\build.make logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/clean
-.PHONY : logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/clean
-
-#=============================================================================
-# Target rules for target logger/logger/CMakeFiles/mp_os_lggr_lggr.dir
-
-# All Build rule for target.
-logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all:
-	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\mp_os_lggr_lggr.dir\build.make logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/depend
-	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\mp_os_lggr_lggr.dir\build.make logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\mp_os\build\CMakeFiles --progress-num=40,41,42,43 "Built target mp_os_lggr_lggr"
-.PHONY : logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-
-# Build rule for subdir invocation for target.
-logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
-.PHONY : logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/rule
-
-# Convenience name for target.
-mp_os_lggr_lggr: logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/rule
-.PHONY : mp_os_lggr_lggr
-
-# clean rule for target.
-logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/clean:
-	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\mp_os_lggr_lggr.dir\build.make logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/clean
-.PHONY : logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/clean
+flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/clean:
+	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\singleton\CMakeFiles\os_cw_flwght_sngltn.dir\build.make flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/clean
+.PHONY : flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

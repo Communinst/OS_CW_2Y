@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_cmmn.a CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.obj CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_cmmn.a

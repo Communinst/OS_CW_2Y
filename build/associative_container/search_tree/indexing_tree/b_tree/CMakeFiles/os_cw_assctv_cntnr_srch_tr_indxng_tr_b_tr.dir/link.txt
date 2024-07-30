@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.a 
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.a

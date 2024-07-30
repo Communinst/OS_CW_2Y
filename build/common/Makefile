@@ -56,10 +56,10 @@ RM = X:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\mp_os
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\mp_os\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,61 +84,16 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	X:\CMake\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	X:\CMake\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles X:\Coding\CPP\mp_os\build\common\\CMakeFiles\progress.marks
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\common\\CMakeFiles\progress.marks
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/clean
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,39 +102,39 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-common/CMakeFiles/mp_os_cmmn.dir/rule:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/CMakeFiles/mp_os_cmmn.dir/rule
-.PHONY : common/CMakeFiles/mp_os_cmmn.dir/rule
+common/CMakeFiles/os_cw_cmmn.dir/rule:
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/CMakeFiles/os_cw_cmmn.dir/rule
+.PHONY : common/CMakeFiles/os_cw_cmmn.dir/rule
 
 # Convenience name for target.
-mp_os_cmmn: common/CMakeFiles/mp_os_cmmn.dir/rule
-.PHONY : mp_os_cmmn
+os_cw_cmmn: common/CMakeFiles/os_cw_cmmn.dir/rule
+.PHONY : os_cw_cmmn
 
 # fast build rule for target.
-mp_os_cmmn/fast:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/build
-.PHONY : mp_os_cmmn/fast
+os_cw_cmmn/fast:
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/build
+.PHONY : os_cw_cmmn/fast
 
 src/not_implemented.obj: src/not_implemented.cpp.obj
 .PHONY : src/not_implemented.obj
 
 # target to build an object file
 src/not_implemented.cpp.obj:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/src/not_implemented.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.obj
 .PHONY : src/not_implemented.cpp.obj
 
 src/not_implemented.i: src/not_implemented.cpp.i
@@ -187,7 +142,7 @@ src/not_implemented.i: src/not_implemented.cpp.i
 
 # target to preprocess a source file
 src/not_implemented.cpp.i:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/src/not_implemented.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.i
 .PHONY : src/not_implemented.cpp.i
 
 src/not_implemented.s: src/not_implemented.cpp.s
@@ -195,7 +150,7 @@ src/not_implemented.s: src/not_implemented.cpp.s
 
 # target to generate assembly for a file
 src/not_implemented.cpp.s:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/src/not_implemented.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.s
 .PHONY : src/not_implemented.cpp.s
 
 src/operation_not_supported.obj: src/operation_not_supported.cpp.obj
@@ -203,7 +158,7 @@ src/operation_not_supported.obj: src/operation_not_supported.cpp.obj
 
 # target to build an object file
 src/operation_not_supported.cpp.obj:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/src/operation_not_supported.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.obj
 .PHONY : src/operation_not_supported.cpp.obj
 
 src/operation_not_supported.i: src/operation_not_supported.cpp.i
@@ -211,7 +166,7 @@ src/operation_not_supported.i: src/operation_not_supported.cpp.i
 
 # target to preprocess a source file
 src/operation_not_supported.cpp.i:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/src/operation_not_supported.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.i
 .PHONY : src/operation_not_supported.cpp.i
 
 src/operation_not_supported.s: src/operation_not_supported.cpp.s
@@ -219,7 +174,7 @@ src/operation_not_supported.s: src/operation_not_supported.cpp.s
 
 # target to generate assembly for a file
 src/operation_not_supported.cpp.s:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/src/operation_not_supported.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.s
 .PHONY : src/operation_not_supported.cpp.s
 
 # Help Target
@@ -229,12 +184,8 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... mp_os_cmmn
+	@echo ... os_cw_cmmn
 	@echo ... src/not_implemented.obj
 	@echo ... src/not_implemented.i
 	@echo ... src/not_implemented.s
@@ -252,6 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,3 +1,0 @@
-X:/Coding/CPP/mp_os/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-X:/Coding/CPP/mp_os/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-X:/Coding/CPP/mp_os/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir

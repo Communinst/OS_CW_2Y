@@ -56,10 +56,10 @@ RM = X:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\mp_os
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\mp_os\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,61 +84,16 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	X:\CMake\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	X:\CMake\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles X:\Coding\CPP\mp_os\build\allocator\allocator\\CMakeFiles\progress.marks
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\allocator\allocator\\CMakeFiles\progress.marks
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/clean
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,39 +102,39 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/rule:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/rule
-.PHONY : allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/rule
+allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule:
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule
+.PHONY : allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule
 
 # Convenience name for target.
-mp_os_allctr_allctr: allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/rule
-.PHONY : mp_os_allctr_allctr
+os_cw_allctr_allctr: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule
+.PHONY : os_cw_allctr_allctr
 
 # fast build rule for target.
-mp_os_allctr_allctr/fast:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/build
-.PHONY : mp_os_allctr_allctr/fast
+os_cw_allctr_allctr/fast:
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/build
+.PHONY : os_cw_allctr_allctr/fast
 
 src/allocator_guardant.obj: src/allocator_guardant.cpp.obj
 .PHONY : src/allocator_guardant.obj
 
 # target to build an object file
 src/allocator_guardant.cpp.obj:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/src/allocator_guardant.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_guardant.cpp.obj
 .PHONY : src/allocator_guardant.cpp.obj
 
 src/allocator_guardant.i: src/allocator_guardant.cpp.i
@@ -187,7 +142,7 @@ src/allocator_guardant.i: src/allocator_guardant.cpp.i
 
 # target to preprocess a source file
 src/allocator_guardant.cpp.i:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/src/allocator_guardant.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_guardant.cpp.i
 .PHONY : src/allocator_guardant.cpp.i
 
 src/allocator_guardant.s: src/allocator_guardant.cpp.s
@@ -195,7 +150,7 @@ src/allocator_guardant.s: src/allocator_guardant.cpp.s
 
 # target to generate assembly for a file
 src/allocator_guardant.cpp.s:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/src/allocator_guardant.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_guardant.cpp.s
 .PHONY : src/allocator_guardant.cpp.s
 
 src/allocator_test_utils.obj: src/allocator_test_utils.cpp.obj
@@ -203,7 +158,7 @@ src/allocator_test_utils.obj: src/allocator_test_utils.cpp.obj
 
 # target to build an object file
 src/allocator_test_utils.cpp.obj:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/src/allocator_test_utils.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_test_utils.cpp.obj
 .PHONY : src/allocator_test_utils.cpp.obj
 
 src/allocator_test_utils.i: src/allocator_test_utils.cpp.i
@@ -211,7 +166,7 @@ src/allocator_test_utils.i: src/allocator_test_utils.cpp.i
 
 # target to preprocess a source file
 src/allocator_test_utils.cpp.i:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/src/allocator_test_utils.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_test_utils.cpp.i
 .PHONY : src/allocator_test_utils.cpp.i
 
 src/allocator_test_utils.s: src/allocator_test_utils.cpp.s
@@ -219,7 +174,7 @@ src/allocator_test_utils.s: src/allocator_test_utils.cpp.s
 
 # target to generate assembly for a file
 src/allocator_test_utils.cpp.s:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/src/allocator_test_utils.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_test_utils.cpp.s
 .PHONY : src/allocator_test_utils.cpp.s
 
 # Help Target
@@ -229,12 +184,8 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... mp_os_allctr_allctr
+	@echo ... os_cw_allctr_allctr
 	@echo ... src/allocator_guardant.obj
 	@echo ... src/allocator_guardant.i
 	@echo ... src/allocator_guardant.s
@@ -252,6 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

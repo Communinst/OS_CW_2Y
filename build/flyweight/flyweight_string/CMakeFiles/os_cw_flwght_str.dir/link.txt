@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_flwght_str.a CMakeFiles/os_cw_flwght_str.dir/src/flyweight_string.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_flwght_str.a

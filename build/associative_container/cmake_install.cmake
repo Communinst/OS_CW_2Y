@@ -1,8 +1,8 @@
-# Install script for directory: X:/Coding/CPP/mp_os/associative_container
+# Install script for directory: X:/Coding/CPP/CourseWorkOpS/associative_container
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/mp_os")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/os_cw")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,11 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/associative_container/hash_table/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/associative_container/search_tree/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/associative_container/search_tree/cmake_install.cmake")
 endif()
 

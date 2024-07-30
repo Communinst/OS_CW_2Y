@@ -1,8 +1,8 @@
-# Install script for directory: X:/Coding/CPP/mp_os/common
+# Install script for directory: X:/Coding/CPP/CourseWorkOpS/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/mp_os")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/os_cw")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

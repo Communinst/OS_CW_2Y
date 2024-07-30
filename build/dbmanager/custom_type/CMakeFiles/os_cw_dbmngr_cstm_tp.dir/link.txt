@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_dbmngr_cstm_tp.a CMakeFiles/os_cw_dbmngr_cstm_tp.dir/src/custom_type.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_dbmngr_cstm_tp.a

@@ -52,10 +52,10 @@ RM = X:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\mp_os\build\_deps\json-subbuild
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\mp_os\build\_deps\json-subbuild
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild
 
 # Utility rule file for json-populate.
 
@@ -76,57 +76,57 @@ CMakeFiles/json-populate-complete: json-populate-prefix/src/json-populate-stamp/
 CMakeFiles/json-populate-complete: json-populate-prefix/src/json-populate-stamp/json-populate-build
 CMakeFiles/json-populate-complete: json-populate-prefix/src/json-populate-stamp/json-populate-install
 CMakeFiles/json-populate-complete: json-populate-prefix/src/json-populate-stamp/json-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'json-populate'"
-	X:\CMake\bin\cmake.exe -E make_directory X:/Coding/CPP/mp_os/build/_deps/json-subbuild/CMakeFiles
-	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/CMakeFiles/json-populate-complete
-	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'json-populate'"
+	X:\CMake\bin\cmake.exe -E make_directory X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/CMakeFiles
+	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/CMakeFiles/json-populate-complete
+	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-done
 
 json-populate-prefix/src/json-populate-stamp/json-populate-build: json-populate-prefix/src/json-populate-stamp/json-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'json-populate'"
-	cd /d X:\Coding\CPP\mp_os\build\_deps\json-build && X:\CMake\bin\cmake.exe -E echo_append
-	cd /d X:\Coding\CPP\mp_os\build\_deps\json-build && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'json-populate'"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps\json-build && X:\CMake\bin\cmake.exe -E echo_append
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps\json-build && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build
 
 json-populate-prefix/src/json-populate-stamp/json-populate-configure: json-populate-prefix/tmp/json-populate-cfgcmd.txt
 json-populate-prefix/src/json-populate-stamp/json-populate-configure: json-populate-prefix/src/json-populate-stamp/json-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'json-populate'"
-	cd /d X:\Coding\CPP\mp_os\build\_deps\json-build && X:\CMake\bin\cmake.exe -E echo_append
-	cd /d X:\Coding\CPP\mp_os\build\_deps\json-build && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'json-populate'"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps\json-build && X:\CMake\bin\cmake.exe -E echo_append
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps\json-build && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure
 
 json-populate-prefix/src/json-populate-stamp/json-populate-download: json-populate-prefix/src/json-populate-stamp/download-json-populate.cmake
 json-populate-prefix/src/json-populate-stamp/json-populate-download: json-populate-prefix/src/json-populate-stamp/json-populate-urlinfo.txt
 json-populate-prefix/src/json-populate-stamp/json-populate-download: json-populate-prefix/src/json-populate-stamp/json-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'json-populate'"
-	cd /d X:\Coding\CPP\mp_os\build\_deps && X:\CMake\bin\cmake.exe -P X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/download-json-populate.cmake
-	cd /d X:\Coding\CPP\mp_os\build\_deps && X:\CMake\bin\cmake.exe -P X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/verify-json-populate.cmake
-	cd /d X:\Coding\CPP\mp_os\build\_deps && X:\CMake\bin\cmake.exe -P X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/extract-json-populate.cmake
-	cd /d X:\Coding\CPP\mp_os\build\_deps && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'json-populate'"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps && X:\CMake\bin\cmake.exe -P X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/download-json-populate.cmake
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps && X:\CMake\bin\cmake.exe -P X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/verify-json-populate.cmake
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps && X:\CMake\bin\cmake.exe -P X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/extract-json-populate.cmake
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download
 
 json-populate-prefix/src/json-populate-stamp/json-populate-install: json-populate-prefix/src/json-populate-stamp/json-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'json-populate'"
-	cd /d X:\Coding\CPP\mp_os\build\_deps\json-build && X:\CMake\bin\cmake.exe -E echo_append
-	cd /d X:\Coding\CPP\mp_os\build\_deps\json-build && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'json-populate'"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps\json-build && X:\CMake\bin\cmake.exe -E echo_append
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps\json-build && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install
 
 json-populate-prefix/src/json-populate-stamp/json-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'json-populate'"
-	X:\CMake\bin\cmake.exe -Dcfgdir= -P X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/tmp/json-populate-mkdirs.cmake
-	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'json-populate'"
+	X:\CMake\bin\cmake.exe -Dcfgdir= -P X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/tmp/json-populate-mkdirs.cmake
+	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir
 
 json-populate-prefix/src/json-populate-stamp/json-populate-patch: json-populate-prefix/src/json-populate-stamp/json-populate-patch-info.txt
 json-populate-prefix/src/json-populate-stamp/json-populate-patch: json-populate-prefix/src/json-populate-stamp/json-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'json-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'json-populate'"
 	X:\CMake\bin\cmake.exe -E echo_append
-	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch
+	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch
 
 json-populate-prefix/src/json-populate-stamp/json-populate-test: json-populate-prefix/src/json-populate-stamp/json-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'json-populate'"
-	cd /d X:\Coding\CPP\mp_os\build\_deps\json-build && X:\CMake\bin\cmake.exe -E echo_append
-	cd /d X:\Coding\CPP\mp_os\build\_deps\json-build && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'json-populate'"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps\json-build && X:\CMake\bin\cmake.exe -E echo_append
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\_deps\json-build && X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test
 
 json-populate-prefix/src/json-populate-stamp/json-populate-update: json-populate-prefix/src/json-populate-stamp/json-populate-update-info.txt
 json-populate-prefix/src/json-populate-stamp/json-populate-update: json-populate-prefix/src/json-populate-stamp/json-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'json-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'json-populate'"
 	X:\CMake\bin\cmake.exe -E echo_append
-	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/mp_os/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update
+	X:\CMake\bin\cmake.exe -E touch X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update
 
 json-populate: CMakeFiles/json-populate
 json-populate: CMakeFiles/json-populate-complete
@@ -150,6 +150,6 @@ CMakeFiles/json-populate.dir/clean:
 .PHONY : CMakeFiles/json-populate.dir/clean
 
 CMakeFiles/json-populate.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" X:\Coding\CPP\mp_os\build\_deps\json-subbuild X:\Coding\CPP\mp_os\build\_deps\json-subbuild X:\Coding\CPP\mp_os\build\_deps\json-subbuild X:\Coding\CPP\mp_os\build\_deps\json-subbuild X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles\json-populate.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles\json-populate.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/json-populate.dir/depend
 

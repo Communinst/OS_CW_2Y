@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "flyweight/flyweight_string/singleton",
+		"source" : "flyweight/flyweight_string/singleton"
+	}
+}

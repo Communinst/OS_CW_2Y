@@ -56,10 +56,10 @@ RM = X:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\mp_os\build\_deps\json-subbuild
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\mp_os\build\_deps\json-subbuild
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles X:\Coding\CPP\mp_os\build\_deps\json-subbuild\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\_deps\json-subbuild\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\_deps\json-subbuild\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

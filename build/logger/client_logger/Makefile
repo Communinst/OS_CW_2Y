@@ -56,10 +56,10 @@ RM = X:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\mp_os
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\mp_os\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,61 +84,16 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	X:\CMake\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	X:\CMake\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles X:\Coding\CPP\mp_os\build\logger\client_logger\\CMakeFiles\progress.marks
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger\\CMakeFiles\progress.marks
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/clean
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,39 +102,39 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/rule:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/rule
-.PHONY : logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/rule
+logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule:
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule
+.PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule
 
 # Convenience name for target.
-mp_os_lggr_clnt_lggr: logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/rule
-.PHONY : mp_os_lggr_clnt_lggr
+os_cw_lggr_clnt_lggr: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule
+.PHONY : os_cw_lggr_clnt_lggr
 
 # fast build rule for target.
-mp_os_lggr_clnt_lggr/fast:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/build
-.PHONY : mp_os_lggr_clnt_lggr/fast
+os_cw_lggr_clnt_lggr/fast:
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/build
+.PHONY : os_cw_lggr_clnt_lggr/fast
 
 src/client_logger.obj: src/client_logger.cpp.obj
 .PHONY : src/client_logger.obj
 
 # target to build an object file
 src/client_logger.cpp.obj:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj
 .PHONY : src/client_logger.cpp.obj
 
 src/client_logger.i: src/client_logger.cpp.i
@@ -187,7 +142,7 @@ src/client_logger.i: src/client_logger.cpp.i
 
 # target to preprocess a source file
 src/client_logger.cpp.i:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.i
 .PHONY : src/client_logger.cpp.i
 
 src/client_logger.s: src/client_logger.cpp.s
@@ -195,7 +150,7 @@ src/client_logger.s: src/client_logger.cpp.s
 
 # target to generate assembly for a file
 src/client_logger.cpp.s:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.s
 .PHONY : src/client_logger.cpp.s
 
 src/client_logger_builder.obj: src/client_logger_builder.cpp.obj
@@ -203,7 +158,7 @@ src/client_logger_builder.obj: src/client_logger_builder.cpp.obj
 
 # target to build an object file
 src/client_logger_builder.cpp.obj:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj
 .PHONY : src/client_logger_builder.cpp.obj
 
 src/client_logger_builder.i: src/client_logger_builder.cpp.i
@@ -211,7 +166,7 @@ src/client_logger_builder.i: src/client_logger_builder.cpp.i
 
 # target to preprocess a source file
 src/client_logger_builder.cpp.i:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.i
 .PHONY : src/client_logger_builder.cpp.i
 
 src/client_logger_builder.s: src/client_logger_builder.cpp.s
@@ -219,7 +174,7 @@ src/client_logger_builder.s: src/client_logger_builder.cpp.s
 
 # target to generate assembly for a file
 src/client_logger_builder.cpp.s:
-	cd /d X:\Coding\CPP\mp_os\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.s
 .PHONY : src/client_logger_builder.cpp.s
 
 # Help Target
@@ -229,12 +184,8 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... mp_os_lggr_clnt_lggr
+	@echo ... os_cw_lggr_clnt_lggr
 	@echo ... src/client_logger.obj
 	@echo ... src/client_logger.i
 	@echo ... src/client_logger.s
@@ -252,6 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d X:\Coding\CPP\mp_os\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

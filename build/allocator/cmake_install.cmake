@@ -1,8 +1,8 @@
-# Install script for directory: X:/Coding/CPP/mp_os/allocator
+# Install script for directory: X:/Coding/CPP/CourseWorkOpS/allocator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/mp_os")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/os_cw")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/allocator/allocator/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/allocator/allocator_boundary_tags/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator_boundary_tags/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/mp_os/build/allocator/allocator_global_heap/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator_global_heap/cmake_install.cmake")
 endif()
 

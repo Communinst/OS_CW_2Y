@@ -56,10 +56,10 @@ RM = X:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\mp_os
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\mp_os\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -84,56 +84,11 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	X:\CMake\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	X:\CMake\bin\cmake.exe -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	X:\CMake\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles X:\Coding\CPP\mp_os\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\mp_os\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -161,277 +116,147 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mp_os_allctr_allctr
+# Target rules for targets named os_cw_allctr_allctr
 
 # Build rule for target.
-mp_os_allctr_allctr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr
-.PHONY : mp_os_allctr_allctr
+os_cw_allctr_allctr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_allctr_allctr
+.PHONY : os_cw_allctr_allctr
 
 # fast build rule for target.
-mp_os_allctr_allctr/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\mp_os_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/mp_os_allctr_allctr.dir/build
-.PHONY : mp_os_allctr_allctr/fast
+os_cw_allctr_allctr/fast:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/build
+.PHONY : os_cw_allctr_allctr/fast
 
 #=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_bndr_tgs
+# Target rules for targets named os_cw_allctr_allctr_bndr_tgs
 
 # Build rule for target.
-mp_os_allctr_allctr_bndr_tgs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_bndr_tgs
-.PHONY : mp_os_allctr_allctr_bndr_tgs
+os_cw_allctr_allctr_bndr_tgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_allctr_allctr_bndr_tgs
+.PHONY : os_cw_allctr_allctr_bndr_tgs
 
 # fast build rule for target.
-mp_os_allctr_allctr_bndr_tgs/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\mp_os_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/mp_os_allctr_allctr_bndr_tgs.dir/build
-.PHONY : mp_os_allctr_allctr_bndr_tgs/fast
+os_cw_allctr_allctr_bndr_tgs/fast:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\os_cw_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/build
+.PHONY : os_cw_allctr_allctr_bndr_tgs/fast
 
 #=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_bndr_tgs_tests
+# Target rules for targets named os_cw_allctr_allctr_glbl_hp
 
 # Build rule for target.
-mp_os_allctr_allctr_bndr_tgs_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_bndr_tgs_tests
-.PHONY : mp_os_allctr_allctr_bndr_tgs_tests
+os_cw_allctr_allctr_glbl_hp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_allctr_allctr_glbl_hp
+.PHONY : os_cw_allctr_allctr_glbl_hp
 
 # fast build rule for target.
-mp_os_allctr_allctr_bndr_tgs_tests/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\tests\CMakeFiles\mp_os_allctr_allctr_bndr_tgs_tests.dir\build.make allocator/allocator_boundary_tags/tests/CMakeFiles/mp_os_allctr_allctr_bndr_tgs_tests.dir/build
-.PHONY : mp_os_allctr_allctr_bndr_tgs_tests/fast
+os_cw_allctr_allctr_glbl_hp/fast:
+	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\os_cw_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/build
+.PHONY : os_cw_allctr_allctr_glbl_hp/fast
 
 #=============================================================================
-# Target rules for targets named gmock
+# Target rules for targets named os_cw_assctv_cntnr
 
 # Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
-.PHONY : gmock
+os_cw_assctv_cntnr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_assctv_cntnr
+.PHONY : os_cw_assctv_cntnr
 
 # fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
+os_cw_assctv_cntnr/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\os_cw_assctv_cntnr.dir\build.make associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/build
+.PHONY : os_cw_assctv_cntnr/fast
 
 #=============================================================================
-# Target rules for targets named gmock_main
+# Target rules for targets named os_cw_assctv_cntnr_srch_tr
 
 # Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
-.PHONY : gmock_main
+os_cw_assctv_cntnr_srch_tr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_assctv_cntnr_srch_tr
+.PHONY : os_cw_assctv_cntnr_srch_tr
 
 # fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
+os_cw_assctv_cntnr_srch_tr/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/build
+.PHONY : os_cw_assctv_cntnr_srch_tr/fast
 
 #=============================================================================
-# Target rules for targets named gtest
+# Target rules for targets named os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr
 
 # Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
-.PHONY : gtest
+os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr
+.PHONY : os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr
 
 # fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
+os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build
+.PHONY : os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr/fast
 
 #=============================================================================
-# Target rules for targets named gtest_main
+# Target rules for targets named os_cw_cmmn
 
 # Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
-.PHONY : gtest_main
+os_cw_cmmn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_cmmn
+.PHONY : os_cw_cmmn
 
 # fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
+os_cw_cmmn/fast:
+	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/build
+.PHONY : os_cw_cmmn/fast
 
 #=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_glbl_hp
+# Target rules for targets named os_cw_lggr_clnt_lggr
 
 # Build rule for target.
-mp_os_allctr_allctr_glbl_hp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_glbl_hp
-.PHONY : mp_os_allctr_allctr_glbl_hp
+os_cw_lggr_clnt_lggr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_lggr_clnt_lggr
+.PHONY : os_cw_lggr_clnt_lggr
 
 # fast build rule for target.
-mp_os_allctr_allctr_glbl_hp/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\mp_os_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/mp_os_allctr_allctr_glbl_hp.dir/build
-.PHONY : mp_os_allctr_allctr_glbl_hp/fast
+os_cw_lggr_clnt_lggr/fast:
+	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/build
+.PHONY : os_cw_lggr_clnt_lggr/fast
 
 #=============================================================================
-# Target rules for targets named mp_os_allctr_allctr_glbl_hp_tests
+# Target rules for targets named os_cw_lggr_lggr
 
 # Build rule for target.
-mp_os_allctr_allctr_glbl_hp_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_allctr_allctr_glbl_hp_tests
-.PHONY : mp_os_allctr_allctr_glbl_hp_tests
+os_cw_lggr_lggr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_lggr_lggr
+.PHONY : os_cw_lggr_lggr
 
 # fast build rule for target.
-mp_os_allctr_allctr_glbl_hp_tests/fast:
-	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\tests\CMakeFiles\mp_os_allctr_allctr_glbl_hp_tests.dir\build.make allocator/allocator_global_heap/tests/CMakeFiles/mp_os_allctr_allctr_glbl_hp_tests.dir/build
-.PHONY : mp_os_allctr_allctr_glbl_hp_tests/fast
+os_cw_lggr_lggr/fast:
+	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/build
+.PHONY : os_cw_lggr_lggr/fast
 
 #=============================================================================
-# Target rules for targets named mp_os_arthmtc_bg_intgr
+# Target rules for targets named os_cw_flwght_str
 
 # Build rule for target.
-mp_os_arthmtc_bg_intgr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_arthmtc_bg_intgr
-.PHONY : mp_os_arthmtc_bg_intgr
+os_cw_flwght_str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_flwght_str
+.PHONY : os_cw_flwght_str
 
 # fast build rule for target.
-mp_os_arthmtc_bg_intgr/fast:
-	$(MAKE) $(MAKESILENT) -f arithmetic\big_integer\CMakeFiles\mp_os_arthmtc_bg_intgr.dir\build.make arithmetic/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr.dir/build
-.PHONY : mp_os_arthmtc_bg_intgr/fast
+os_cw_flwght_str/fast:
+	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\CMakeFiles\os_cw_flwght_str.dir\build.make flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/build
+.PHONY : os_cw_flwght_str/fast
 
 #=============================================================================
-# Target rules for targets named mp_os_arthmtc_bg_intgr_tests_bgnt
+# Target rules for targets named os_cw_flwght_sngltn
 
 # Build rule for target.
-mp_os_arthmtc_bg_intgr_tests_bgnt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_arthmtc_bg_intgr_tests_bgnt
-.PHONY : mp_os_arthmtc_bg_intgr_tests_bgnt
+os_cw_flwght_sngltn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_flwght_sngltn
+.PHONY : os_cw_flwght_sngltn
 
 # fast build rule for target.
-mp_os_arthmtc_bg_intgr_tests_bgnt/fast:
-	$(MAKE) $(MAKESILENT) -f arithmetic\big_integer\tests\big_integer\CMakeFiles\mp_os_arthmtc_bg_intgr_tests_bgnt.dir\build.make arithmetic/big_integer/tests/big_integer/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_bgnt.dir/build
-.PHONY : mp_os_arthmtc_bg_intgr_tests_bgnt/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr
-
-# Build rule for target.
-mp_os_assctv_cntnr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_assctv_cntnr
-.PHONY : mp_os_assctv_cntnr
-
-# fast build rule for target.
-mp_os_assctv_cntnr/fast:
-	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\mp_os_assctv_cntnr.dir\build.make associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/build
-.PHONY : mp_os_assctv_cntnr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_hsh_tbl
-
-# Build rule for target.
-mp_os_assctv_cntnr_hsh_tbl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_assctv_cntnr_hsh_tbl
-.PHONY : mp_os_assctv_cntnr_hsh_tbl
-
-# fast build rule for target.
-mp_os_assctv_cntnr_hsh_tbl/fast:
-	$(MAKE) $(MAKESILENT) -f associative_container\hash_table\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl.dir\build.make associative_container/hash_table/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl.dir/build
-.PHONY : mp_os_assctv_cntnr_hsh_tbl/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_hsh_tbl_tests
-
-# Build rule for target.
-mp_os_assctv_cntnr_hsh_tbl_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_assctv_cntnr_hsh_tbl_tests
-.PHONY : mp_os_assctv_cntnr_hsh_tbl_tests
-
-# fast build rule for target.
-mp_os_assctv_cntnr_hsh_tbl_tests/fast:
-	$(MAKE) $(MAKESILENT) -f associative_container\hash_table\tests\CMakeFiles\mp_os_assctv_cntnr_hsh_tbl_tests.dir\build.make associative_container/hash_table/tests/CMakeFiles/mp_os_assctv_cntnr_hsh_tbl_tests.dir/build
-.PHONY : mp_os_assctv_cntnr_hsh_tbl_tests/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_assctv_cntnr_srch_tr
-.PHONY : mp_os_assctv_cntnr_srch_tr
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr/fast:
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_bnr_srch_tr
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr
-.PHONY : mp_os_assctv_cntnr_srch_tr_bnr_srch_tr
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr/fast:
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\binary_search_tree\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir\build.make associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_bnr_srch_tr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
-.PHONY : mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests/fast:
-	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\binary_search_tree\tests\CMakeFiles\mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir\build.make associative_container/search_tree/binary_search_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_cmmn
-
-# Build rule for target.
-mp_os_cmmn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_cmmn
-.PHONY : mp_os_cmmn
-
-# fast build rule for target.
-mp_os_cmmn/fast:
-	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\mp_os_cmmn.dir\build.make common/CMakeFiles/mp_os_cmmn.dir/build
-.PHONY : mp_os_cmmn/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_lggr_clnt_lggr
-
-# Build rule for target.
-mp_os_lggr_clnt_lggr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_lggr_clnt_lggr
-.PHONY : mp_os_lggr_clnt_lggr
-
-# fast build rule for target.
-mp_os_lggr_clnt_lggr/fast:
-	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\mp_os_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/mp_os_lggr_clnt_lggr.dir/build
-.PHONY : mp_os_lggr_clnt_lggr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_lggr_clnt_lggr_tests
-
-# Build rule for target.
-mp_os_lggr_clnt_lggr_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_lggr_clnt_lggr_tests
-.PHONY : mp_os_lggr_clnt_lggr_tests
-
-# fast build rule for target.
-mp_os_lggr_clnt_lggr_tests/fast:
-	$(MAKE) $(MAKESILENT) -f logger\client_logger\tests\CMakeFiles\mp_os_lggr_clnt_lggr_tests.dir\build.make logger/client_logger/tests/CMakeFiles/mp_os_lggr_clnt_lggr_tests.dir/build
-.PHONY : mp_os_lggr_clnt_lggr_tests/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_lggr_lggr
-
-# Build rule for target.
-mp_os_lggr_lggr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 mp_os_lggr_lggr
-.PHONY : mp_os_lggr_lggr
-
-# fast build rule for target.
-mp_os_lggr_lggr/fast:
-	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\mp_os_lggr_lggr.dir\build.make logger/logger/CMakeFiles/mp_os_lggr_lggr.dir/build
-.PHONY : mp_os_lggr_lggr/fast
+os_cw_flwght_sngltn/fast:
+	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\singleton\CMakeFiles\os_cw_flwght_sngltn.dir\build.make flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/build
+.PHONY : os_cw_flwght_sngltn/fast
 
 # Help Target
 help:
@@ -440,32 +265,18 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... install
-	@echo ... install/local
-	@echo ... install/strip
-	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... gmock
-	@echo ... gmock_main
-	@echo ... gtest
-	@echo ... gtest_main
-	@echo ... mp_os_allctr_allctr
-	@echo ... mp_os_allctr_allctr_bndr_tgs
-	@echo ... mp_os_allctr_allctr_bndr_tgs_tests
-	@echo ... mp_os_allctr_allctr_glbl_hp
-	@echo ... mp_os_allctr_allctr_glbl_hp_tests
-	@echo ... mp_os_arthmtc_bg_intgr
-	@echo ... mp_os_arthmtc_bg_intgr_tests_bgnt
-	@echo ... mp_os_assctv_cntnr
-	@echo ... mp_os_assctv_cntnr_hsh_tbl
-	@echo ... mp_os_assctv_cntnr_hsh_tbl_tests
-	@echo ... mp_os_assctv_cntnr_srch_tr
-	@echo ... mp_os_assctv_cntnr_srch_tr_bnr_srch_tr
-	@echo ... mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests
-	@echo ... mp_os_cmmn
-	@echo ... mp_os_lggr_clnt_lggr
-	@echo ... mp_os_lggr_clnt_lggr_tests
-	@echo ... mp_os_lggr_lggr
+	@echo ... os_cw_allctr_allctr
+	@echo ... os_cw_allctr_allctr_bndr_tgs
+	@echo ... os_cw_allctr_allctr_glbl_hp
+	@echo ... os_cw_assctv_cntnr
+	@echo ... os_cw_assctv_cntnr_srch_tr
+	@echo ... os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr
+	@echo ... os_cw_cmmn
+	@echo ... os_cw_flwght_sngltn
+	@echo ... os_cw_flwght_str
+	@echo ... os_cw_lggr_clnt_lggr
+	@echo ... os_cw_lggr_lggr
 .PHONY : help
 
 

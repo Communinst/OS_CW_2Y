@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_flwght_sngltn.a CMakeFiles/os_cw_flwght_sngltn.dir/src/singleton.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_flwght_sngltn.a

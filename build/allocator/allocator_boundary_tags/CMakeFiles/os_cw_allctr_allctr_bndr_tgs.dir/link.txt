@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_allctr_allctr_bndr_tgs.a CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/src/allocator_boundary_tags.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_allctr_allctr_bndr_tgs.a
