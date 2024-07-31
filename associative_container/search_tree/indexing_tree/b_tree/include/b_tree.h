@@ -1,7 +1,6 @@
 #ifndef OPERATING_SYSTEMS_COURSE_WORK_TEMPLATE_REPO_B_TREE_H
 #define OPERATING_SYSTEMS_COURSE_WORK_TEMPLATE_REPO_B_TREE_H
-#ifndef OPERATING_SYSTEMS_COURSE_WORK_TEMPLATE_REPO_B_TREE_H
-#define OPERATING_SYSTEMS_COURSE_WORK_TEMPLATE_REPO_B_TREE_H
+
 
 #include <search_tree.h>
 
@@ -1552,5 +1551,4 @@ inline std::string b_tree<tkey, tvalue>::get_typename() const noexcept
     return "b_tree<tkey, tvalue>";
 }
 
-#endif //OPERATING_SYSTEMS_COURSE_WORK_TEMPLATE_REPO_B_TREE_H
 #endif //OPERATING_SYSTEMS_COURSE_WORK_TEMPLATE_REPO_B_TREE_H
