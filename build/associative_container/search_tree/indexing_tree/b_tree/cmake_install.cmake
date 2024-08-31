@@ -1,4 +1,4 @@
-# Install script for directory: X:/Coding/CPP/CourseWorkOpS/associative_container/search_tree/indexing_tree/b_tree
+# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/associative_container/search_tree/indexing_tree/b_tree
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

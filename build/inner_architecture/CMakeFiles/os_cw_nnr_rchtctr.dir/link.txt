@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_nnr_rchtctr.a CMakeFiles/os_cw_nnr_rchtctr.dir/src/inner_architecture.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_nnr_rchtctr.a

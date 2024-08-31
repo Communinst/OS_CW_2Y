@@ -8,3 +8,7 @@ add_subdirectory(associative_container)
 add_subdirectory(common)
 add_subdirectory(logger)
 add_subdirectory(flyweight)
+add_subdirectory(relevant_type)
+add_subdirectory(inner_architecture)
+
+add_subdirectory(DC_utilities)

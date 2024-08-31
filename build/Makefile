@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = X:\CMake\bin\cmake.exe
+CMAKE_COMMAND = C:\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = X:\CMake\bin\cmake.exe -E rm -f
+RM = C:\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
+CMAKE_SOURCE_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
+CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	X:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	X:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -258,6 +258,45 @@ os_cw_flwght_sngltn/fast:
 	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\singleton\CMakeFiles\os_cw_flwght_sngltn.dir\build.make flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/build
 .PHONY : os_cw_flwght_sngltn/fast
 
+#=============================================================================
+# Target rules for targets named os_cw_rlvnt_tp
+
+# Build rule for target.
+os_cw_rlvnt_tp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_rlvnt_tp
+.PHONY : os_cw_rlvnt_tp
+
+# fast build rule for target.
+os_cw_rlvnt_tp/fast:
+	$(MAKE) $(MAKESILENT) -f relevant_type\CMakeFiles\os_cw_rlvnt_tp.dir\build.make relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/build
+.PHONY : os_cw_rlvnt_tp/fast
+
+#=============================================================================
+# Target rules for targets named os_cw_nnr_rchtctr
+
+# Build rule for target.
+os_cw_nnr_rchtctr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_nnr_rchtctr
+.PHONY : os_cw_nnr_rchtctr
+
+# fast build rule for target.
+os_cw_nnr_rchtctr/fast:
+	$(MAKE) $(MAKESILENT) -f inner_architecture\CMakeFiles\os_cw_nnr_rchtctr.dir\build.make inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/build
+.PHONY : os_cw_nnr_rchtctr/fast
+
+#=============================================================================
+# Target rules for targets named os_cw_dc_utlts
+
+# Build rule for target.
+os_cw_dc_utlts: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_dc_utlts
+.PHONY : os_cw_dc_utlts
+
+# fast build rule for target.
+os_cw_dc_utlts/fast:
+	$(MAKE) $(MAKESILENT) -f DC_utilities\CMakeFiles\os_cw_dc_utlts.dir\build.make DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/build
+.PHONY : os_cw_dc_utlts/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -273,10 +312,13 @@ help:
 	@echo ... os_cw_assctv_cntnr_srch_tr
 	@echo ... os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr
 	@echo ... os_cw_cmmn
+	@echo ... os_cw_dc_utlts
 	@echo ... os_cw_flwght_sngltn
 	@echo ... os_cw_flwght_str
 	@echo ... os_cw_lggr_clnt_lggr
 	@echo ... os_cw_lggr_lggr
+	@echo ... os_cw_nnr_rchtctr
+	@echo ... os_cw_rlvnt_tp
 .PHONY : help
 
 

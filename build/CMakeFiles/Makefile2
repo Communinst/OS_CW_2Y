@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = X:\CMake\bin\cmake.exe
+CMAKE_COMMAND = C:\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = X:\CMake\bin\cmake.exe -E rm -f
+RM = C:\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
+CMAKE_SOURCE_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
+CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -67,6 +67,9 @@ all: associative_container/all
 all: common/all
 all: logger/all
 all: flyweight/all
+all: relevant_type/all
+all: inner_architecture/all
+all: DC_utilities/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -75,6 +78,9 @@ preinstall: associative_container/preinstall
 preinstall: common/preinstall
 preinstall: logger/preinstall
 preinstall: flyweight/preinstall
+preinstall: relevant_type/preinstall
+preinstall: inner_architecture/preinstall
+preinstall: DC_utilities/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -83,7 +89,25 @@ clean: associative_container/clean
 clean: common/clean
 clean: logger/clean
 clean: flyweight/clean
+clean: relevant_type/clean
+clean: inner_architecture/clean
+clean: DC_utilities/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory DC_utilities
+
+# Recursive "all" directory target.
+DC_utilities/all: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/all
+.PHONY : DC_utilities/all
+
+# Recursive "preinstall" directory target.
+DC_utilities/preinstall:
+.PHONY : DC_utilities/preinstall
+
+# Recursive "clean" directory target.
+DC_utilities/clean: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/clean
+.PHONY : DC_utilities/clean
 
 #=============================================================================
 # Directory level rules for directory _deps/json-build
@@ -293,6 +317,21 @@ flyweight/flyweight_string/singleton/clean: flyweight/flyweight_string/singleton
 .PHONY : flyweight/flyweight_string/singleton/clean
 
 #=============================================================================
+# Directory level rules for directory inner_architecture
+
+# Recursive "all" directory target.
+inner_architecture/all: inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all
+.PHONY : inner_architecture/all
+
+# Recursive "preinstall" directory target.
+inner_architecture/preinstall:
+.PHONY : inner_architecture/preinstall
+
+# Recursive "clean" directory target.
+inner_architecture/clean: inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/clean
+.PHONY : inner_architecture/clean
+
+#=============================================================================
 # Directory level rules for directory logger
 
 # Recursive "all" directory target.
@@ -343,20 +382,35 @@ logger/logger/clean: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/clean
 .PHONY : logger/logger/clean
 
 #=============================================================================
+# Directory level rules for directory relevant_type
+
+# Recursive "all" directory target.
+relevant_type/all: relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/all
+.PHONY : relevant_type/all
+
+# Recursive "preinstall" directory target.
+relevant_type/preinstall:
+.PHONY : relevant_type/preinstall
+
+# Recursive "clean" directory target.
+relevant_type/clean: relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/clean
+.PHONY : relevant_type/clean
+
+#=============================================================================
 # Target rules for target allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir
 
 # All Build rule for target.
 allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all:
 	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator\allocator\CMakeFiles\os_cw_allctr_allctr.dir\build.make allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=1,2,3 "Built target os_cw_allctr_allctr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=1,2,3 "Built target os_cw_allctr_allctr"
 .PHONY : allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
 
 # Build rule for subdir invocation for target.
 allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/rule
 
 # Convenience name for target.
@@ -377,14 +431,14 @@ allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/al
 allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\os_cw_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator\allocator_boundary_tags\CMakeFiles\os_cw_allctr_allctr_bndr_tgs.dir\build.make allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=4,5 "Built target os_cw_allctr_allctr_bndr_tgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=4,5 "Built target os_cw_allctr_allctr_bndr_tgs"
 .PHONY : allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all
 
 # Build rule for subdir invocation for target.
 allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/rule
 
 # Convenience name for target.
@@ -405,14 +459,14 @@ allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all: 
 allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\os_cw_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/depend
 	$(MAKE) $(MAKESILENT) -f allocator\allocator_global_heap\CMakeFiles\os_cw_allctr_allctr_glbl_hp.dir\build.make allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=6,7 "Built target os_cw_allctr_allctr_glbl_hp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=6,7 "Built target os_cw_allctr_allctr_glbl_hp"
 .PHONY : allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all
 
 # Build rule for subdir invocation for target.
 allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/rule
 
 # Convenience name for target.
@@ -431,14 +485,14 @@ allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/clean
 associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\os_cw_assctv_cntnr.dir\build.make associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container\CMakeFiles\os_cw_assctv_cntnr.dir\build.make associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=8 "Built target os_cw_assctv_cntnr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=8 "Built target os_cw_assctv_cntnr"
 .PHONY : associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
 
 # Build rule for subdir invocation for target.
 associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/rule
 
 # Convenience name for target.
@@ -454,20 +508,20 @@ associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/clean:
 # Target rules for target associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir
 
 # All Build rule for target.
-associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
 associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
+associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
 associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
 associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr.dir\build.make associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=9 "Built target os_cw_assctv_cntnr_srch_tr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=9 "Built target os_cw_assctv_cntnr_srch_tr"
 .PHONY : associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all
 
 # Build rule for subdir invocation for target.
 associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/rule
 
 # Convenience name for target.
@@ -483,22 +537,22 @@ associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/clea
 # Target rules for target associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir
 
 # All Build rule for target.
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all
-associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
-associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all
+associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/depend
 	$(MAKE) $(MAKESILENT) -f associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=10 "Built target os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=10 "Built target os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr"
 .PHONY : associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all
 
 # Build rule for subdir invocation for target.
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule
 
 # Convenience name for target.
@@ -517,14 +571,14 @@ associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_c
 common/CMakeFiles/os_cw_cmmn.dir/all:
 	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/depend
 	$(MAKE) $(MAKESILENT) -f common\CMakeFiles\os_cw_cmmn.dir\build.make common/CMakeFiles/os_cw_cmmn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=11,12,13 "Built target os_cw_cmmn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=11,12,13 "Built target os_cw_cmmn"
 .PHONY : common/CMakeFiles/os_cw_cmmn.dir/all
 
 # Build rule for subdir invocation for target.
 common/CMakeFiles/os_cw_cmmn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 common/CMakeFiles/os_cw_cmmn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : common/CMakeFiles/os_cw_cmmn.dir/rule
 
 # Convenience name for target.
@@ -544,14 +598,14 @@ logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all: common/CMakeFiles/
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/depend
 	$(MAKE) $(MAKESILENT) -f logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\build.make logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=18,19,20 "Built target os_cw_lggr_clnt_lggr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=20,21,22 "Built target os_cw_lggr_clnt_lggr"
 .PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all
 
 # Build rule for subdir invocation for target.
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/rule
 
 # Convenience name for target.
@@ -570,14 +624,14 @@ logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/clean:
 logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all:
 	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/depend
 	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=21,22,23,24 "Built target os_cw_lggr_lggr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=23,24,25,26 "Built target os_cw_lggr_lggr"
 .PHONY : logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
 
 # Build rule for subdir invocation for target.
 logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule
 
 # Convenience name for target.
@@ -596,14 +650,14 @@ logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/clean:
 flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all:
 	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\CMakeFiles\os_cw_flwght_str.dir\build.make flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/depend
 	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\CMakeFiles\os_cw_flwght_str.dir\build.make flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=16,17 "Built target os_cw_flwght_str"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=18,19 "Built target os_cw_flwght_str"
 .PHONY : flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
 
 # Build rule for subdir invocation for target.
 flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/rule
 
 # Convenience name for target.
@@ -622,14 +676,14 @@ flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/clean:
 flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all: flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
 	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\singleton\CMakeFiles\os_cw_flwght_sngltn.dir\build.make flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/depend
 	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\singleton\CMakeFiles\os_cw_flwght_sngltn.dir\build.make flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=14,15 "Built target os_cw_flwght_sngltn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=16,17 "Built target os_cw_flwght_sngltn"
 .PHONY : flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all
 
 # Build rule for subdir invocation for target.
 flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/rule
 
 # Convenience name for target.
@@ -640,6 +694,97 @@ os_cw_flwght_sngltn: flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwgh
 flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/clean:
 	$(MAKE) $(MAKESILENT) -f flyweight\flyweight_string\singleton\CMakeFiles\os_cw_flwght_sngltn.dir\build.make flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/clean
 .PHONY : flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/clean
+
+#=============================================================================
+# Target rules for target relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir
+
+# All Build rule for target.
+relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/all: flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all
+relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/all: flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
+	$(MAKE) $(MAKESILENT) -f relevant_type\CMakeFiles\os_cw_rlvnt_tp.dir\build.make relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/depend
+	$(MAKE) $(MAKESILENT) -f relevant_type\CMakeFiles\os_cw_rlvnt_tp.dir\build.make relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=29,30 "Built target os_cw_rlvnt_tp"
+.PHONY : relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/all
+
+# Build rule for subdir invocation for target.
+relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/rule
+
+# Convenience name for target.
+os_cw_rlvnt_tp: relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/rule
+.PHONY : os_cw_rlvnt_tp
+
+# clean rule for target.
+relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f relevant_type\CMakeFiles\os_cw_rlvnt_tp.dir\build.make relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/clean
+.PHONY : relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/clean
+
+#=============================================================================
+# Target rules for target inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir
+
+# All Build rule for target.
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: associative_container/CMakeFiles/os_cw_assctv_cntnr.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: associative_container/search_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: common/CMakeFiles/os_cw_cmmn.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/all
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/all
+	$(MAKE) $(MAKESILENT) -f inner_architecture\CMakeFiles\os_cw_nnr_rchtctr.dir\build.make inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/depend
+	$(MAKE) $(MAKESILENT) -f inner_architecture\CMakeFiles\os_cw_nnr_rchtctr.dir\build.make inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=27,28 "Built target os_cw_nnr_rchtctr"
+.PHONY : inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all
+
+# Build rule for subdir invocation for target.
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 30
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/rule
+
+# Convenience name for target.
+os_cw_nnr_rchtctr: inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/rule
+.PHONY : os_cw_nnr_rchtctr
+
+# clean rule for target.
+inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f inner_architecture\CMakeFiles\os_cw_nnr_rchtctr.dir\build.make inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/clean
+.PHONY : inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/clean
+
+#=============================================================================
+# Target rules for target DC_utilities/CMakeFiles/os_cw_dc_utlts.dir
+
+# All Build rule for target.
+DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/all:
+	$(MAKE) $(MAKESILENT) -f DC_utilities\CMakeFiles\os_cw_dc_utlts.dir\build.make DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/depend
+	$(MAKE) $(MAKESILENT) -f DC_utilities\CMakeFiles\os_cw_dc_utlts.dir\build.make DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=14,15 "Built target os_cw_dc_utlts"
+.PHONY : DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/all
+
+# Build rule for subdir invocation for target.
+DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+.PHONY : DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/rule
+
+# Convenience name for target.
+os_cw_dc_utlts: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/rule
+.PHONY : os_cw_dc_utlts
+
+# clean rule for target.
+DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/clean:
+	$(MAKE) $(MAKESILENT) -f DC_utilities\CMakeFiles\os_cw_dc_utlts.dir\build.make DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/clean
+.PHONY : DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

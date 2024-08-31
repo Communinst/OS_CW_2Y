@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_dc_utlts.a CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_dc_utlts.a

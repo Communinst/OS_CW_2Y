@@ -6,7 +6,7 @@ flyweight_string_singleton::flyweight_string_singleton()
 {  }
 
 
-flyweight_string_singleton *flyweight_string_singleton::define_singleton()
+flyweight_string_singleton *flyweight_string_singleton::get_singleton()
 {
     static auto *singleton = new flyweight_string_singleton();
     return singleton;

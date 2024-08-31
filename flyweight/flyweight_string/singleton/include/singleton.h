@@ -9,6 +9,7 @@
 #include <flyweight_string.h>
 
 
+
 class flyweight_string_singleton final
 {
 
@@ -20,7 +21,9 @@ private:
 
     flyweight_string_singleton();
 
-    static flyweight_string_singleton *define_singleton();  
+public:
+
+    static flyweight_string_singleton *get_singleton();  
 
     std::shared_ptr<flyweight_string> get_sample(const std::string &data);
 
