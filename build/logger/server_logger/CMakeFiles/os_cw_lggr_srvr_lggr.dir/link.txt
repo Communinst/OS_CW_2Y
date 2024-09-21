@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_lggr_srvr_lggr.a CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger.cpp.obj CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger_builder.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_lggr_srvr_lggr.a

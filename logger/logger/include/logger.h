@@ -52,6 +52,9 @@ protected:
 
     static std::string severity_to_string(
         logger::severity severity);
+        
+    static logger::severity string_to_severity(
+        std::string str);
 
     static std::string current_date_to_string() noexcept;
     static std::string current_time_to_string() noexcept;

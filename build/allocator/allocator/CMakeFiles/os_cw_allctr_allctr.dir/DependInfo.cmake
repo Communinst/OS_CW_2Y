@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator/src/allocator_guardant.cpp" "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_guardant.cpp.obj" "gcc" "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_guardant.cpp.obj.d"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator/src/allocator_test_utils.cpp" "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_test_utils.cpp.obj" "gcc" "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_test_utils.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/allocator/allocator/src/allocator_guardant.cpp" "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_guardant.cpp.obj" "gcc" "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_guardant.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/allocator/allocator/src/allocator_test_utils.cpp" "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_test_utils.cpp.obj" "gcc" "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_test_utils.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

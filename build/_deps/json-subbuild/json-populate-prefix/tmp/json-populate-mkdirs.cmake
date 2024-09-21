@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-src"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-build"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/tmp"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp"
+  "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-src"
+  "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-build"
+  "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix"
+  "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/tmp"
+  "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp"
+  "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src"
+  "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "X:/Coding/CPP/CourseWorkOpS/build/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

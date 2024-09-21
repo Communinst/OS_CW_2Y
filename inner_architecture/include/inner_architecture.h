@@ -1,17 +1,35 @@
 
+
+//#ifndef __has_include
+//  static_assert(false, "__has_include not supported");
+//#else
+//#  if __cplusplus >= 201703L && __has_include(<filesystem>)
+//#    include <filesystem>
+//     namespace fs = std::filesystem;
+//#  elif __has_include(<experimental/filesystem>)
+//#    include <experimental/filesystem>
+//     namespace fs = std::experimental::filesystem;
+//#  elif __has_include(<boost/filesystem.hpp>)
+//#    include <boost/filesystem.hpp>
+//     namespace fs = boost::filesystem;
+//#  endif
+//#endif
+
+
 #ifndef OPERATING_SYSTEMS_COURSE_WORK_INNER_ARCHITECTURE_H
 #define OPERATING_SYSTEMS_COURSE_WORK_INNER_ARCHITECTURE_H
 
-#include <user.h>
-#include <search_tree.h>
-#include <b_tree.h>
-#include <allocator.h>
-#include <allocator_with_fit_mode.h>
-#include <logger.h>
-#include <dc_utilities.h>
+#include "../../relevant_type/include/user.h"
+#include "../../associative_container/search_tree/include/search_tree.h"
+#include "../../associative_container/search_tree/indexing_tree/b_tree/include/b_tree.h"
+#include "../../allocator/allocator/include/allocator.h"
+#include "../../allocator/allocator/include/allocator_with_fit_mode.h"
+#include "../../logger/logger/include/logger.h"
+#include "../../DC_utilities/include/dc_utilities.h"
+#include "../../IPC/include/ipc.h"
 
-#include <allocator_global_heap.h>
-#include <allocator_boundary_tags.h>
+#include "../../allocator/allocator_global_heap/include/allocator_global_heap.h"
+#include "../../allocator/allocator_boundary_tags/include/allocator_boundary_tags.h"
 
 
 
@@ -32,36 +50,6 @@ class db_storage final //:
     //public logger_guardant,
     //public allocator_guardant
 {
-
-#pragma region ENUMS
-
-public:
-
-    enum class search_tvar
-    {
-        B,
-        B_PLUS,
-        B_STAR,
-        B_STAR_PLUS
-    };
-
-    enum class allocator_var
-    {
-        GLOBAL_HEAP,
-        BOUNDARY_TAGS,
-        BUDDIES,
-        SORTED_LIST,
-        RBT
-    };
-
-    enum class mode
-    {
-        UNINITIALIZED,
-        RAM,
-        FILE
-    };
-
-#pragma endregion ENUMS
 
 
 
@@ -145,8 +133,59 @@ public:
 
     };
 
+    class nonexistent_file_path_hit_attempt_exception final :
+        public std::logic_error
+    {
 
-public:
+        public:
+
+            nonexistent_file_path_hit_attempt_exception ();
+
+    };
+
+    class invalid_path_exception final :
+        public std::logic_error
+    {
+
+        public:
+
+            invalid_path_exception ();
+
+    };
+
+    class path_length_exception final :
+        public std::logic_error
+    {
+
+        public:
+
+            path_length_exception (
+                const std::string op);
+
+    };
+
+    class invalid_name_exception final :
+        public std::logic_error
+    {
+
+        public:
+
+            invalid_name_exception (
+                const std::string name,
+                const std::string of);
+
+    };
+
+
+    class insertion_failure final :
+        public std::logic_error
+    {
+
+        public:
+
+            insertion_failure ();
+
+    };
 
 
 
@@ -157,13 +196,23 @@ public:
 
 #pragma region THROWS
 
+public:
+
 db_storage &throw_if_init ();
 db_storage &throw_if_uninit ();
 
 db_storage &throw_if_invalid_params (
     size_t id,
-    mode mode);
+    ipc::mode mode);
 
+db_storage &throw_if_invalid_path (
+    const std::string path);
+
+db_storage &throw_if_invalid_file_name (
+    const std::string path);
+
+db_storage &throw_if_path_too_long (
+    const std::string path);
 
 #pragma endregion THROWS
 
@@ -185,7 +234,7 @@ class ram_tdata final :
     public tdata
 {
 
-private:
+public:
 
     user _user_data;
 
@@ -212,7 +261,7 @@ private:
 public:
 
     file_tdata(
-		long file_pos = -1);
+		long int file_pos = -1);
 	
 	void serialize(
 		const std::string &path,
@@ -232,7 +281,7 @@ public:
 
 #pragma region COLLECTION PROPERTIES
 
-private:
+public:
 
     class collection final :
         protected allocator_guardant
@@ -241,13 +290,14 @@ private:
         private:
 
             search_tree<tkey_flyweight, tdata *> *_tdata;
-            db_storage::search_tvar _search_tvar;
+            ipc::search_tvar _search_tvar;
 
             std::shared_ptr<allocator> _allocator;
             allocator_with_fit_mode::fit_mode _fit_mode;
-            db_storage::allocator_var _allocator_var;
+            ipc::allocator_var _allocator_var;
 
             size_t _records_amount;
+            size_t _disposed_amount;
 
         public:
 
@@ -262,6 +312,12 @@ private:
 		
 		    void move_from(
 			    collection &&other);
+
+            void check_if_refresh (
+                const std::string &path);
+
+            void refresh (
+                const std::string &path);
 
         public:
 
@@ -282,49 +338,55 @@ private:
         public:
 
             collection (
-                db_storage::search_tvar search_tvar,
-                db_storage::allocator_var allocator_var,
+                ipc::search_tvar search_tvar,
+                ipc::allocator_var allocator_var,
                 allocator_with_fit_mode::fit_mode fit_mode,
                 size_t param_for_tree = 8);
 
             void add_to_inner (
                 const std::string &user_name,
-                const user &user);
+                const user &user,
+                const std::string &path);
 
             void add_to_inner (
                 const std::string &user_name,
-                const user &&user);
+                const user &&user,
+                const std::string &path);
 
             void update_inner (
                 const std::string &user_name,
-                const user &user);
+                const user &user,
+                const std::string &path);
             
             void update_inner (
                 const std::string &user_name,
-                const user &&user);
+                const user &&user,
+                const std::string &path);
 
             user dispose_from_inner (       
-                const std::string &user_name);        
+                const std::string &user_name,
+                const std::string &path);        
 
             user obtain_from_inner (     
-                const std::string &user_name);     
+                const std::string &user_name,
+                const std::string &path);     
 
             std::vector<std::pair<tkey, tvalue>> obtain_between(
-			    tkey const &lower_bound,
-			    tkey const &upper_bound,
+			    const tkey &lower_bound,
+			    const tkey &upper_bound,
 			    bool lower_bound_inclusive,
 			    bool upper_bound_inclusive,
-			    std::string const &path);
+			    const std::string &path);
 		
 		    std::pair<tkey, tvalue> obtain_min(
-		    	std::string const &path);
+		    	const std::string &path);
     
 		    std::pair<tkey, tvalue> obtain_max(
-		    	std::string const &path);
+		    	const std::string &path);
     
 		    std::pair<tkey, tvalue> obtain_next(
-		    	std::string const &path,
-		    	tkey const &key);
+		    	const std::string &path,
+		    	const tkey &key);
     
 		    size_t get_records_amount();   
 
@@ -338,22 +400,21 @@ private:
 
 #pragma region SCHEMA PROPERTIES
 
-private:
+public:
 
-    class schema final :
-        protected allocator_guardant
+    class schema final 
     {   
 
     private:
 
         search_tree<tkey_flyweight, collection> *_collections;
-        db_storage::search_tvar _search_tvar;
+        ipc::search_tvar _search_tvar;
 
-        size_t _records_amount;
+        //size_t _records_amount;
 
     public:
 
-        [[nodiscard]] inline allocator *get_allocator () const noexcept;
+        //[[nodiscard]] inline allocator *get_allocator () const noexcept;
 
     private:
 
@@ -384,13 +445,13 @@ private:
     public:
 
         schema (
-            db_storage::search_tvar search_tvar,
+            ipc::search_tvar search_tvar,
             size_t param_for_tree = 8);
 
         void add_to_inner (
             const std::string &collection_name,
-            db_storage::search_tvar search_tvar,
-            db_storage::allocator_var allocator_var,
+            ipc::search_tvar search_tvar,
+            ipc::allocator_var allocator_var,
             allocator_with_fit_mode::fit_mode fit_mode,
             size_t param_for_tree);
 
@@ -409,7 +470,7 @@ private:
 
 #pragma region POOL PROPERTIES
 
-private:
+public:
 
     class pool final
     {
@@ -417,7 +478,7 @@ private:
     private:
 
         search_tree<tkey_flyweight, schema> *_schemas;
-        db_storage::search_tvar _search_tvar;
+        ipc::search_tvar _search_tvar;
 
     private:
 	
@@ -448,12 +509,12 @@ private:
     public:
 
         explicit pool (
-            db_storage::search_tvar search_tvar,
+            ipc::search_tvar search_tvar,
             size_t param_for_t);
 
         void add_to_inner (
             const std::string &schema_name,
-            db_storage::search_tvar search_tvar,
+            ipc::search_tvar search_tvar,
             size_t param_for_tree);
 
         void dispose_from_inner (
@@ -476,8 +537,10 @@ private:
 
 private:
 
+    
+
     size_t _id;
-    mode _mode;
+    ipc::mode _mode;
     b_tree<tkey_flyweight, pool> _pools;
     //std::shared_ptr<logger> logger;
     std::shared_ptr<allocator> allocator;
@@ -488,15 +551,21 @@ public:
 
     db_storage *setup (
         size_t id,
-        mode mode);
+        ipc::mode mode);
+
+    db_storage *clear();
+
+private:
 
     void add_to_inner (
         const std::string &pool_name,
-        db_storage::search_tvar search_tvar,
+        ipc::search_tvar search_tvar,
         size_t param_for_tree);
 
     void dispose_from_inner (
         const std::string &pool_name);
+
+public:
 
     pool &obtain_from_inner (
         const std::string &pool_name);
@@ -536,7 +605,7 @@ public:
 
     db_storage *add_pool (
         const std::string &pool_name,
-        db_storage::search_tvar search_tvar,
+        ipc::search_tvar search_tvar,
         size_t param_for_tree);
 
     db_storage *dispose_pool (
@@ -545,21 +614,21 @@ public:
 
     db_storage *add_schema (
         const std::string &pool_name,
-        const std::string &chema_name,
-        db_storage::search_tvar search_tvar,
+        const std::string &schema_name,
+        ipc::search_tvar search_tvar,
         size_t param_for_tree);
 
     db_storage *dispose_schema (
         const std::string &pool_name,
-        const std::string &chema_name);
+        const std::string &schema_name);
 
 
     db_storage *add_collection (
         const std::string &pool_name,
         const std::string &schema_name,
         const std::string &collection_name,
-        db_storage::search_tvar search_tvar,
-        db_storage::allocator_var allocator_var,
+        ipc::search_tvar search_tvar,
+        ipc::allocator_var allocator_var,
         allocator_with_fit_mode::fit_mode fit_mode,
         size_t param_for_tree);
     
@@ -608,6 +677,31 @@ public:
         const std::string &schema_name,
         const std::string &collection_name,
         const std::string &user_name);
+
+    std::vector<std::pair<tkey, tvalue>> obtain_between(
+		const std::string &pool_name,
+		const std::string &schema_name,
+		const std::string &collection_name,
+        const tkey &lower_bound,
+        const tkey &upper_bound,
+        bool lower_bound_inclusive,
+        bool upper_bound_inclusive);
+	
+	std::pair<tkey, tvalue> obtain_min_user(
+		const std::string &pool_name,
+		const std::string &schema_name,
+		const std::string &collection_name);
+		
+	std::pair<tkey, tvalue> obtain_max_user(
+		const std::string &pool_name,
+		const std::string &schema_name,
+		const std::string &collection_name);
+		
+	std::pair<tkey, tvalue> obtain_next_user(
+		const std::string &pool_name,
+		const std::string &schema_name,
+		const std::string &collection_name,
+		const tkey &user_name);
 
 
 #pragma endregion RAM BASIC INTERFACE

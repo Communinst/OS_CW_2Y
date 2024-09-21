@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger.cpp" "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj" "gcc" "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj.d"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger_builder.cpp" "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj" "gcc" "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger.cpp" "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj" "gcc" "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger_builder.cpp" "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj" "gcc" "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

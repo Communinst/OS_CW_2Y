@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator
+# Install script for directory: X:/Coding/CPP/CourseWorkOpS/allocator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/allocator/allocator/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/allocator/allocator_boundary_tags/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator_boundary_tags/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/allocator/allocator_global_heap/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator_global_heap/cmake_install.cmake")
 endif()
 

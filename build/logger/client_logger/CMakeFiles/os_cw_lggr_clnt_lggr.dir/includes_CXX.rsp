@@ -1,1 +1,1 @@
--IC:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/client_logger/./include -IC:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/common/./include -IC:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/logger/./include -I"C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/_deps/json-src/include"
+-IX:/Coding/CPP/CourseWorkOpS/logger/client_logger/./include -IX:/Coding/CPP/CourseWorkOpS/common/./include -IX:/Coding/CPP/CourseWorkOpS/logger/logger/./include -I"X:/Coding/CPP/CourseWorkOpS/build/_deps/json-src/include"

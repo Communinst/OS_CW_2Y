@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\CMake\bin\cmake.exe
+CMAKE_COMMAND = X:\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\CMake\bin\cmake.exe -E rm -f
+RM = X:\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	C:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	X:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	X:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\logger\\CMakeFiles\progress.marks
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\logger\logger\\CMakeFiles\progress.marks
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/clean
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule
 .PHONY : logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ os_cw_lggr_lggr: logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/rule
 
 # fast build rule for target.
 os_cw_lggr_lggr/fast:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/build
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/build
 .PHONY : os_cw_lggr_lggr/fast
 
 src/logger.obj: src/logger.cpp.obj
@@ -134,7 +134,7 @@ src/logger.obj: src/logger.cpp.obj
 
 # target to build an object file
 src/logger.cpp.obj:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger.cpp.obj
 .PHONY : src/logger.cpp.obj
 
 src/logger.i: src/logger.cpp.i
@@ -142,7 +142,7 @@ src/logger.i: src/logger.cpp.i
 
 # target to preprocess a source file
 src/logger.cpp.i:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger.cpp.i
 .PHONY : src/logger.cpp.i
 
 src/logger.s: src/logger.cpp.s
@@ -150,7 +150,7 @@ src/logger.s: src/logger.cpp.s
 
 # target to generate assembly for a file
 src/logger.cpp.s:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger.cpp.s
 .PHONY : src/logger.cpp.s
 
 src/logger_builder.obj: src/logger_builder.cpp.obj
@@ -158,7 +158,7 @@ src/logger_builder.obj: src/logger_builder.cpp.obj
 
 # target to build an object file
 src/logger_builder.cpp.obj:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_builder.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_builder.cpp.obj
 .PHONY : src/logger_builder.cpp.obj
 
 src/logger_builder.i: src/logger_builder.cpp.i
@@ -166,7 +166,7 @@ src/logger_builder.i: src/logger_builder.cpp.i
 
 # target to preprocess a source file
 src/logger_builder.cpp.i:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_builder.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_builder.cpp.i
 .PHONY : src/logger_builder.cpp.i
 
 src/logger_builder.s: src/logger_builder.cpp.s
@@ -174,7 +174,7 @@ src/logger_builder.s: src/logger_builder.cpp.s
 
 # target to generate assembly for a file
 src/logger_builder.cpp.s:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_builder.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_builder.cpp.s
 .PHONY : src/logger_builder.cpp.s
 
 src/logger_guardant.obj: src/logger_guardant.cpp.obj
@@ -182,7 +182,7 @@ src/logger_guardant.obj: src/logger_guardant.cpp.obj
 
 # target to build an object file
 src/logger_guardant.cpp.obj:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_guardant.cpp.obj
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_guardant.cpp.obj
 .PHONY : src/logger_guardant.cpp.obj
 
 src/logger_guardant.i: src/logger_guardant.cpp.i
@@ -190,7 +190,7 @@ src/logger_guardant.i: src/logger_guardant.cpp.i
 
 # target to preprocess a source file
 src/logger_guardant.cpp.i:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_guardant.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_guardant.cpp.i
 .PHONY : src/logger_guardant.cpp.i
 
 src/logger_guardant.s: src/logger_guardant.cpp.s
@@ -198,7 +198,7 @@ src/logger_guardant.s: src/logger_guardant.cpp.s
 
 # target to generate assembly for a file
 src/logger_guardant.cpp.s:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_guardant.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_guardant.cpp.s
 .PHONY : src/logger_guardant.cpp.s
 
 # Help Target
@@ -230,6 +230,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

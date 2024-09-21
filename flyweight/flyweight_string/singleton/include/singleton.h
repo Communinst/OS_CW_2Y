@@ -6,7 +6,7 @@
 #include <map>
 #include <string>
 #include <memory>
-#include <flyweight_string.h>
+#include "../../include/flyweight_string.h"
 
 
 

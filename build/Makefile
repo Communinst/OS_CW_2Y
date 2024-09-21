@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\CMake\bin\cmake.exe
+CMAKE_COMMAND = X:\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\CMake\bin\cmake.exe -E rm -f
+RM = X:\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	C:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	X:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	X:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,6 +155,19 @@ os_cw_allctr_allctr_glbl_hp/fast:
 .PHONY : os_cw_allctr_allctr_glbl_hp/fast
 
 #=============================================================================
+# Target rules for targets named os_cw_ipc
+
+# Build rule for target.
+os_cw_ipc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_ipc
+.PHONY : os_cw_ipc
+
+# fast build rule for target.
+os_cw_ipc/fast:
+	$(MAKE) $(MAKESILENT) -f IPC\CMakeFiles\os_cw_ipc.dir\build.make IPC/CMakeFiles/os_cw_ipc.dir/build
+.PHONY : os_cw_ipc/fast
+
+#=============================================================================
 # Target rules for targets named os_cw_assctv_cntnr
 
 # Build rule for target.
@@ -207,6 +220,45 @@ os_cw_cmmn/fast:
 .PHONY : os_cw_cmmn/fast
 
 #=============================================================================
+# Target rules for targets named os_cw_nnr_rchtctr
+
+# Build rule for target.
+os_cw_nnr_rchtctr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_nnr_rchtctr
+.PHONY : os_cw_nnr_rchtctr
+
+# fast build rule for target.
+os_cw_nnr_rchtctr/fast:
+	$(MAKE) $(MAKESILENT) -f inner_architecture\CMakeFiles\os_cw_nnr_rchtctr.dir\build.make inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/build
+.PHONY : os_cw_nnr_rchtctr/fast
+
+#=============================================================================
+# Target rules for targets named os_cw_cmmd_pttrn
+
+# Build rule for target.
+os_cw_cmmd_pttrn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_cmmd_pttrn
+.PHONY : os_cw_cmmd_pttrn
+
+# fast build rule for target.
+os_cw_cmmd_pttrn/fast:
+	$(MAKE) $(MAKESILENT) -f command\CMakeFiles\os_cw_cmmd_pttrn.dir\build.make command/CMakeFiles/os_cw_cmmd_pttrn.dir/build
+.PHONY : os_cw_cmmd_pttrn/fast
+
+#=============================================================================
+# Target rules for targets named os_cw_cor_pttrn
+
+# Build rule for target.
+os_cw_cor_pttrn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_cor_pttrn
+.PHONY : os_cw_cor_pttrn
+
+# fast build rule for target.
+os_cw_cor_pttrn/fast:
+	$(MAKE) $(MAKESILENT) -f COR\CMakeFiles\os_cw_cor_pttrn.dir\build.make COR/CMakeFiles/os_cw_cor_pttrn.dir/build
+.PHONY : os_cw_cor_pttrn/fast
+
+#=============================================================================
 # Target rules for targets named os_cw_lggr_clnt_lggr
 
 # Build rule for target.
@@ -231,6 +283,32 @@ os_cw_lggr_lggr: cmake_check_build_system
 os_cw_lggr_lggr/fast:
 	$(MAKE) $(MAKESILENT) -f logger\logger\CMakeFiles\os_cw_lggr_lggr.dir\build.make logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/build
 .PHONY : os_cw_lggr_lggr/fast
+
+#=============================================================================
+# Target rules for targets named os_cw_lggr_sngltn
+
+# Build rule for target.
+os_cw_lggr_sngltn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_lggr_sngltn
+.PHONY : os_cw_lggr_sngltn
+
+# fast build rule for target.
+os_cw_lggr_sngltn/fast:
+	$(MAKE) $(MAKESILENT) -f logger\logger_singleton\CMakeFiles\os_cw_lggr_sngltn.dir\build.make logger/logger_singleton/CMakeFiles/os_cw_lggr_sngltn.dir/build
+.PHONY : os_cw_lggr_sngltn/fast
+
+#=============================================================================
+# Target rules for targets named os_cw_lggr_srvr_lggr
+
+# Build rule for target.
+os_cw_lggr_srvr_lggr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_lggr_srvr_lggr
+.PHONY : os_cw_lggr_srvr_lggr
+
+# fast build rule for target.
+os_cw_lggr_srvr_lggr/fast:
+	$(MAKE) $(MAKESILENT) -f logger\server_logger\CMakeFiles\os_cw_lggr_srvr_lggr.dir\build.make logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/build
+.PHONY : os_cw_lggr_srvr_lggr/fast
 
 #=============================================================================
 # Target rules for targets named os_cw_flwght_str
@@ -272,17 +350,30 @@ os_cw_rlvnt_tp/fast:
 .PHONY : os_cw_rlvnt_tp/fast
 
 #=============================================================================
-# Target rules for targets named os_cw_nnr_rchtctr
+# Target rules for targets named os_cw_ntrctn
 
 # Build rule for target.
-os_cw_nnr_rchtctr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_nnr_rchtctr
-.PHONY : os_cw_nnr_rchtctr
+os_cw_ntrctn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_ntrctn
+.PHONY : os_cw_ntrctn
 
 # fast build rule for target.
-os_cw_nnr_rchtctr/fast:
-	$(MAKE) $(MAKESILENT) -f inner_architecture\CMakeFiles\os_cw_nnr_rchtctr.dir\build.make inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/build
-.PHONY : os_cw_nnr_rchtctr/fast
+os_cw_ntrctn/fast:
+	$(MAKE) $(MAKESILENT) -f interaction\CMakeFiles\os_cw_ntrctn.dir\build.make interaction/CMakeFiles/os_cw_ntrctn.dir/build
+.PHONY : os_cw_ntrctn/fast
+
+#=============================================================================
+# Target rules for targets named os_cw_test
+
+# Build rule for target.
+os_cw_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 os_cw_test
+.PHONY : os_cw_test
+
+# fast build rule for target.
+os_cw_test/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\os_cw_test.dir\build.make test/CMakeFiles/os_cw_test.dir/build
+.PHONY : os_cw_test/fast
 
 #=============================================================================
 # Target rules for targets named os_cw_dc_utlts
@@ -311,14 +402,21 @@ help:
 	@echo ... os_cw_assctv_cntnr
 	@echo ... os_cw_assctv_cntnr_srch_tr
 	@echo ... os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr
+	@echo ... os_cw_cmmd_pttrn
 	@echo ... os_cw_cmmn
+	@echo ... os_cw_cor_pttrn
 	@echo ... os_cw_dc_utlts
 	@echo ... os_cw_flwght_sngltn
 	@echo ... os_cw_flwght_str
+	@echo ... os_cw_ipc
 	@echo ... os_cw_lggr_clnt_lggr
 	@echo ... os_cw_lggr_lggr
+	@echo ... os_cw_lggr_sngltn
+	@echo ... os_cw_lggr_srvr_lggr
 	@echo ... os_cw_nnr_rchtctr
+	@echo ... os_cw_ntrctn
 	@echo ... os_cw_rlvnt_tp
+	@echo ... os_cw_test
 .PHONY : help
 
 

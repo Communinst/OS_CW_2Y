@@ -1,0 +1,4 @@
+ADDPOOL gay B 5
+ADDSCHEMA gay moron B 5
+ADDCOLLECTION gay moron jerk B BOUNDARY_TAGS the_best_fit 5
+ADDUSER gay moron jerk off B 5

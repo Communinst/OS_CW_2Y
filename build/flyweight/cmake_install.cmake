@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/flyweight
+# Install script for directory: X:/Coding/CPP/CourseWorkOpS/flyweight
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/flyweight/flyweight_string/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/flyweight/flyweight_string/cmake_install.cmake")
 endif()
 

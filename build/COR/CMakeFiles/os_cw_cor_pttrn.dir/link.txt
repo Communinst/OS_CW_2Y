@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_cor_pttrn.a CMakeFiles/os_cw_cor_pttrn.dir/src/handlers.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_cor_pttrn.a

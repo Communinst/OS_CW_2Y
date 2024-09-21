@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_ipc.a CMakeFiles/os_cw_ipc.dir/src/ipc.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_ipc.a

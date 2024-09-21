@@ -1,11 +1,11 @@
 #ifndef OPERATING_SYSTEMS_COURSE_WORK_ALLOCATOR_ALLOCATOR_BOUNDARY_TAGS_H
 #define OPERATING_SYSTEMS_COURSE_WORK_ALLOCATOR_ALLOCATOR_BOUNDARY_TAGS_H
 
-#include <allocator_guardant.h>
-#include <allocator_test_utils.h>
-#include <allocator_with_fit_mode.h>
-#include <logger_guardant.h>
-#include <typename_holder.h>
+#include "../../allocator/include/allocator_guardant.h"
+#include "../../allocator/include/allocator_test_utils.h"
+#include "../../allocator/include/allocator_with_fit_mode.h"
+#include "../../../logger/logger/include/logger_guardant.h"
+#include "../../../common/include/typename_holder.h"
 
 
 class allocator_boundary_tags final:

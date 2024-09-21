@@ -1,7 +1,7 @@
 #ifndef OPERATING_SYSTEMS_COURSE_WORK_RELEVANT_TYPE_H
 #define OPERATING_SYSTEMS_COURSE_WORK_RELEVANT_TYPE_H
 
-#include <singleton.h>
+#include "../../flyweight/flyweight_string/singleton/include/singleton.h"
 #include <memory>
 #include <string>
 
@@ -11,14 +11,23 @@ class user final
 private:
 
     long int _balance;
-    std::shared_ptr<flyweight_string> _login;
+    std::shared_ptr<flyweight_string> _nickname;
     std::shared_ptr<flyweight_string> _password;
 
 public:
 
-    user(
-        const std::string login,
-        const std::string password);
+    user ();
+
+    user (
+        const std::string nickname,
+        const std::string password,
+        long balance = 0);
+
+public:
+
+    std::string get_nick ()  const noexcept;
+    std::string get_password ()  const noexcept;
+    long int get_balance () const noexcept;
 
 private:
 
@@ -30,7 +39,7 @@ private:
 
 public:
 
-    ~user();
+    ~user() = default;
 
     user (
         const user &other);

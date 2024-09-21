@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/inner_architecture/src/inner_architecture.cpp" "inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/src/inner_architecture.cpp.obj" "gcc" "inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/src/inner_architecture.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/inner_architecture/src/inner_architecture.cpp" "inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/src/inner_architecture.cpp.obj" "gcc" "inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/src/inner_architecture.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

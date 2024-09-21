@@ -10,4 +10,3 @@ const std::string &flyweight_string::get_data() const
 {
     return _data;
 }
-

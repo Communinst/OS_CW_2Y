@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger
+# Install script for directory: X:/Coding/CPP/CourseWorkOpS/logger
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,11 +39,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/client_logger/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/logger/client_logger/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/logger/cmake_install.cmake")
+  include("X:/Coding/CPP/CourseWorkOpS/build/logger/logger/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("X:/Coding/CPP/CourseWorkOpS/build/logger/logger_singleton/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("X:/Coding/CPP/CourseWorkOpS/build/logger/server_logger/cmake_install.cmake")
 endif()
 

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/common/src/not_implemented.cpp" "common/CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.obj" "gcc" "common/CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.obj.d"
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/common/src/operation_not_supported.cpp" "common/CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.obj" "gcc" "common/CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/common/src/not_implemented.cpp" "common/CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.obj" "gcc" "common/CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/common/src/operation_not_supported.cpp" "common/CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.obj" "gcc" "common/CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

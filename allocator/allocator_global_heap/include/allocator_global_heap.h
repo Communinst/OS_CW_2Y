@@ -1,10 +1,10 @@
 #ifndef OPERATING_SYSTEMS_COURSE_WORK_ALLOCATOR_ALLOCATOR_GLOBAL_HEAP_H
 #define OPERATING_SYSTEMS_COURSE_WORK_ALLOCATOR_GLOBAL_HEAP_H
 
-#include <allocator.h>
-#include <logger.h>
-#include <logger_guardant.h>
-#include <typename_holder.h>
+#include "../../allocator/include/allocator.h"
+#include "../../../logger/logger/include/logger.h"
+#include "../../../logger/logger/include/logger_guardant.h"
+#include "../../../common/include/typename_holder.h"
 
 class allocator_global_heap final:
     public allocator,

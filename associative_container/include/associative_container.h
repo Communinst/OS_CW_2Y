@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <vector>
-#include <operation_not_supported.h>
 
 template<
     typename tkey,

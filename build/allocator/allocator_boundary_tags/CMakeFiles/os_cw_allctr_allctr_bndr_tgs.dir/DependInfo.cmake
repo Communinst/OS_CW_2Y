@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator_boundary_tags/src/allocator_boundary_tags.cpp" "allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/src/allocator_boundary_tags.cpp.obj" "gcc" "allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/src/allocator_boundary_tags.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/allocator/allocator_boundary_tags/src/allocator_boundary_tags.cpp" "allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/src/allocator_boundary_tags.cpp.obj" "gcc" "allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/src/allocator_boundary_tags.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

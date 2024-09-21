@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\CMake\bin\cmake.exe
+CMAKE_COMMAND = X:\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\CMake\bin\cmake.exe -E rm -f
+RM = X:\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 # Include any dependencies generated for this target.
 include logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/depend.make
@@ -70,33 +70,33 @@ include logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/flags.make
 
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/flags.make
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/includes_CXX.rsp
-logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger.cpp
+logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj: X:/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger.cpp
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj -MF CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger.cpp.obj.d -o CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger.cpp.obj -c C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj -MF CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger.cpp.obj.d -o CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger.cpp.obj -c X:\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger.cpp
 
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.i"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger.cpp > CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger.cpp > CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger.cpp.i
 
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.s"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger.cpp -o CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger.cpp -o CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger.cpp.s
 
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/flags.make
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/includes_CXX.rsp
-logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger_builder.cpp
+logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj: X:/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger_builder.cpp
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj -MF CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger_builder.cpp.obj.d -o CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger_builder.cpp.obj -c C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger_builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj -MF CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger_builder.cpp.obj.d -o CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger_builder.cpp.obj -c X:\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger_builder.cpp
 
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.i"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger_builder.cpp > CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger_builder.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger_builder.cpp > CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger_builder.cpp.i
 
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.s"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger_builder.cpp -o CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger_builder.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\Coding\CPP\CourseWorkOpS\logger\client_logger\src\client_logger_builder.cpp -o CMakeFiles\os_cw_lggr_clnt_lggr.dir\src\client_logger_builder.cpp.s
 
 # Object files for target os_cw_lggr_clnt_lggr
 os_cw_lggr_clnt_lggr_OBJECTS = \
@@ -110,19 +110,19 @@ logger/client_logger/libos_cw_lggr_clnt_lggr.a: logger/client_logger/CMakeFiles/
 logger/client_logger/libos_cw_lggr_clnt_lggr.a: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj
 logger/client_logger/libos_cw_lggr_clnt_lggr.a: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/build.make
 logger/client_logger/libos_cw_lggr_clnt_lggr.a: logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libos_cw_lggr_clnt_lggr.a"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && $(CMAKE_COMMAND) -P CMakeFiles\os_cw_lggr_clnt_lggr.dir\cmake_clean_target.cmake
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\os_cw_lggr_clnt_lggr.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libos_cw_lggr_clnt_lggr.a"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && $(CMAKE_COMMAND) -P CMakeFiles\os_cw_lggr_clnt_lggr.dir\cmake_clean_target.cmake
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\os_cw_lggr_clnt_lggr.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/build: logger/client_logger/libos_cw_lggr_clnt_lggr.a
 .PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/build
 
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/clean:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger && $(CMAKE_COMMAND) -P CMakeFiles\os_cw_lggr_clnt_lggr.dir\cmake_clean.cmake
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger && $(CMAKE_COMMAND) -P CMakeFiles\os_cw_lggr_clnt_lggr.dir\cmake_clean.cmake
 .PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/clean
 
 logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\logger\client_logger C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" X:\Coding\CPP\CourseWorkOpS X:\Coding\CPP\CourseWorkOpS\logger\client_logger X:\Coding\CPP\CourseWorkOpS\build X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger X:\Coding\CPP\CourseWorkOpS\build\logger\client_logger\CMakeFiles\os_cw_lggr_clnt_lggr.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/depend
 

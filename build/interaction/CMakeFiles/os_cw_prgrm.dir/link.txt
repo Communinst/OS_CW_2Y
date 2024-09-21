@@ -1,0 +1,2 @@
+C:\msys64\mingw64\bin\ar.exe qc libos_cw_prgrm.a CMakeFiles/os_cw_prgrm.dir/src/interaction.cpp.obj
+C:\msys64\mingw64\bin\ranlib.exe libos_cw_prgrm.a

@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\CMake\bin\cmake.exe
+CMAKE_COMMAND = X:\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\CMake\bin\cmake.exe -E rm -f
+RM = X:\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	C:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	X:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	X:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\logger\\CMakeFiles\progress.marks
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\logger\\CMakeFiles\progress.marks
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/clean
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,17 +102,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/preinstall
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logger/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -134,6 +134,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\CMake\bin\cmake.exe
+CMAKE_COMMAND = X:\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\CMake\bin\cmake.exe -E rm -f
+RM = X:\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS
+CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
+CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 
 # Include any dependencies generated for this target.
 include DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/depend.make
@@ -70,18 +70,18 @@ include DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/flags.make
 
 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/flags.make
 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/includes_CXX.rsp
-DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/DC_utilities/src/dc_utilities.cpp
+DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj: X:/Coding/CPP/CourseWorkOpS/DC_utilities/src/dc_utilities.cpp
 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\DC_utilities && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj -MF CMakeFiles\os_cw_dc_utlts.dir\src\dc_utilities.cpp.obj.d -o CMakeFiles\os_cw_dc_utlts.dir\src\dc_utilities.cpp.obj -c C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\DC_utilities\src\dc_utilities.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\DC_utilities && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj -MF CMakeFiles\os_cw_dc_utlts.dir\src\dc_utilities.cpp.obj.d -o CMakeFiles\os_cw_dc_utlts.dir\src\dc_utilities.cpp.obj -c X:\Coding\CPP\CourseWorkOpS\DC_utilities\src\dc_utilities.cpp
 
 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.i"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\DC_utilities && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\DC_utilities\src\dc_utilities.cpp > CMakeFiles\os_cw_dc_utlts.dir\src\dc_utilities.cpp.i
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\DC_utilities && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\Coding\CPP\CourseWorkOpS\DC_utilities\src\dc_utilities.cpp > CMakeFiles\os_cw_dc_utlts.dir\src\dc_utilities.cpp.i
 
 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.s"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\DC_utilities && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\DC_utilities\src\dc_utilities.cpp -o CMakeFiles\os_cw_dc_utlts.dir\src\dc_utilities.cpp.s
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\DC_utilities && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\Coding\CPP\CourseWorkOpS\DC_utilities\src\dc_utilities.cpp -o CMakeFiles\os_cw_dc_utlts.dir\src\dc_utilities.cpp.s
 
 # Object files for target os_cw_dc_utlts
 os_cw_dc_utlts_OBJECTS = \
@@ -93,19 +93,19 @@ os_cw_dc_utlts_EXTERNAL_OBJECTS =
 DC_utilities/libos_cw_dc_utlts.a: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj
 DC_utilities/libos_cw_dc_utlts.a: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/build.make
 DC_utilities/libos_cw_dc_utlts.a: DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libos_cw_dc_utlts.a"
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\DC_utilities && $(CMAKE_COMMAND) -P CMakeFiles\os_cw_dc_utlts.dir\cmake_clean_target.cmake
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\DC_utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\os_cw_dc_utlts.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libos_cw_dc_utlts.a"
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\DC_utilities && $(CMAKE_COMMAND) -P CMakeFiles\os_cw_dc_utlts.dir\cmake_clean_target.cmake
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\DC_utilities && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\os_cw_dc_utlts.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/build: DC_utilities/libos_cw_dc_utlts.a
 .PHONY : DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/build
 
 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/clean:
-	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\DC_utilities && $(CMAKE_COMMAND) -P CMakeFiles\os_cw_dc_utlts.dir\cmake_clean.cmake
+	cd /d X:\Coding\CPP\CourseWorkOpS\build\DC_utilities && $(CMAKE_COMMAND) -P CMakeFiles\os_cw_dc_utlts.dir\cmake_clean.cmake
 .PHONY : DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/clean
 
 DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\DC_utilities C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\DC_utilities C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\DC_utilities\CMakeFiles\os_cw_dc_utlts.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" X:\Coding\CPP\CourseWorkOpS X:\Coding\CPP\CourseWorkOpS\DC_utilities X:\Coding\CPP\CourseWorkOpS\build X:\Coding\CPP\CourseWorkOpS\build\DC_utilities X:\Coding\CPP\CourseWorkOpS\build\DC_utilities\CMakeFiles\os_cw_dc_utlts.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/depend
 

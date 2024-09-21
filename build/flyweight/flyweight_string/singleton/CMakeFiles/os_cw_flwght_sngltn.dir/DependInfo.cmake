@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/flyweight/flyweight_string/singleton/src/singleton.cpp" "flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/src/singleton.cpp.obj" "gcc" "flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/src/singleton.cpp.obj.d"
+  "X:/Coding/CPP/CourseWorkOpS/flyweight/flyweight_string/singleton/src/singleton.cpp" "flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/src/singleton.cpp.obj" "gcc" "flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/src/singleton.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

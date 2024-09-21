@@ -1,1 +1,1 @@
--IC:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator_global_heap/./include -IC:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/common/./include -IC:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/logger/./include -IC:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator/./include
+-IX:/Coding/CPP/CourseWorkOpS/allocator/allocator_global_heap/./include -IX:/Coding/CPP/CourseWorkOpS/common/./include -IX:/Coding/CPP/CourseWorkOpS/logger/logger/./include -IX:/Coding/CPP/CourseWorkOpS/allocator/allocator/./include
