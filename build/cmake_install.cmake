@@ -1,4 +1,4 @@
-# Install script for directory: X:/Coding/CPP/CourseWorkOpS
+# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,67 +39,67 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/allocator/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/allocator/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/IPC/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/IPC/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/associative_container/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/associative_container/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/common/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/inner_architecture/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/inner_architecture/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/command/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/command/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/COR/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/COR/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/logger/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/flyweight/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/flyweight/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/relevant_type/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/relevant_type/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/interaction/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/interaction/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/test/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/test/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("X:/Coding/CPP/CourseWorkOpS/build/DC_utilities/cmake_install.cmake")
+  include("C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/DC_utilities/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -110,5 +110,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "X:/Coding/CPP/CourseWorkOpS/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

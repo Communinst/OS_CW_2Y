@@ -1,4 +1,4 @@
-# Install script for directory: X:/Coding/CPP/CourseWorkOpS/inner_architecture
+# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/inner_architecture
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

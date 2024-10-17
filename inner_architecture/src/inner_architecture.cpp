@@ -466,7 +466,7 @@ void db_storage::collection::refresh (
             std::fstream data_stream(data_path, std::ios::out | std::ios::binary | std::ios::trunc);
             if (!data_stream.is_open())
             {
-                throw std::ios::failure("Origin ile down the path can't be opened.");
+                throw std::ios::failure("Origin file down the path can't be opened.");
             }
             
             (data_stream << tmp_data_strm.rdbuf()).flush();

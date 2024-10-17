@@ -1,146 +1,152 @@
 [
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_allctr_allctr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_allctr_allctr.dir\\src\\allocator_guardant.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\allocator\\allocator\\src\\allocator_guardant.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/allocator/allocator/src/allocator_guardant.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/allocator/allocator",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_allctr_allctr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_allctr_allctr.dir\\src\\allocator_guardant.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\allocator\\allocator\\src\\allocator_guardant.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator/src/allocator_guardant.cpp",
   "output": "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_guardant.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_allctr_allctr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_allctr_allctr.dir\\src\\allocator_test_utils.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\allocator\\allocator\\src\\allocator_test_utils.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/allocator/allocator/src/allocator_test_utils.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/allocator/allocator",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_allctr_allctr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_allctr_allctr.dir\\src\\allocator_test_utils.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\allocator\\allocator\\src\\allocator_test_utils.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator/src/allocator_test_utils.cpp",
   "output": "allocator/allocator/CMakeFiles/os_cw_allctr_allctr.dir/src/allocator_test_utils.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator_boundary_tags",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_allctr_allctr_bndr_tgs.dir\\src\\allocator_boundary_tags.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\allocator\\allocator_boundary_tags\\src\\allocator_boundary_tags.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/allocator/allocator_boundary_tags/src/allocator_boundary_tags.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/allocator/allocator_boundary_tags",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_allctr_allctr_bndr_tgs.dir\\src\\allocator_boundary_tags.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\allocator\\allocator_boundary_tags\\src\\allocator_boundary_tags.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator_boundary_tags/src/allocator_boundary_tags.cpp",
   "output": "allocator/allocator_boundary_tags/CMakeFiles/os_cw_allctr_allctr_bndr_tgs.dir/src/allocator_boundary_tags.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/allocator/allocator_global_heap",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_allctr_allctr_glbl_hp.dir\\src\\allocator_global_heap.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\allocator\\allocator_global_heap\\src\\allocator_global_heap.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/allocator/allocator_global_heap/src/allocator_global_heap.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/allocator/allocator_global_heap",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_allctr_allctr_glbl_hp.dir\\src\\allocator_global_heap.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\allocator\\allocator_global_heap\\src\\allocator_global_heap.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator_global_heap/src/allocator_global_heap.cpp",
   "output": "allocator/allocator_global_heap/CMakeFiles/os_cw_allctr_allctr_glbl_hp.dir/src/allocator_global_heap.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/IPC",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_ipc.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_ipc.dir\\src\\ipc.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\IPC\\src\\ipc.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/IPC/src/ipc.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/IPC",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_ipc.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_ipc.dir\\src\\ipc.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\IPC\\src\\ipc.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/IPC/src/ipc.cpp",
   "output": "IPC/CMakeFiles/os_cw_ipc.dir/src/ipc.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/common",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_cmmn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_cmmn.dir\\src\\not_implemented.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\common\\src\\not_implemented.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/common/src/not_implemented.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/common",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_cmmn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_cmmn.dir\\src\\not_implemented.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\common\\src\\not_implemented.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/common/src/not_implemented.cpp",
   "output": "common/CMakeFiles/os_cw_cmmn.dir/src/not_implemented.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/common",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_cmmn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_cmmn.dir\\src\\operation_not_supported.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\common\\src\\operation_not_supported.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/common/src/operation_not_supported.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/common",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_cmmn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_cmmn.dir\\src\\operation_not_supported.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\common\\src\\operation_not_supported.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/common/src/operation_not_supported.cpp",
   "output": "common/CMakeFiles/os_cw_cmmn.dir/src/operation_not_supported.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/inner_architecture",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_nnr_rchtctr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_nnr_rchtctr.dir\\src\\inner_architecture.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\inner_architecture\\src\\inner_architecture.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/inner_architecture/src/inner_architecture.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/inner_architecture",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_nnr_rchtctr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_nnr_rchtctr.dir\\src\\inner_architecture.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\inner_architecture\\src\\inner_architecture.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/inner_architecture/src/inner_architecture.cpp",
   "output": "inner_architecture/CMakeFiles/os_cw_nnr_rchtctr.dir/src/inner_architecture.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/command",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_cmmd_pttrn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_cmmd_pttrn.dir\\src\\command.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\command\\src\\command.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/command/src/command.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/command",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_cmmd_pttrn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_cmmd_pttrn.dir\\src\\command.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\command\\src\\command.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/command/src/command.cpp",
   "output": "command/CMakeFiles/os_cw_cmmd_pttrn.dir/src/command.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/COR",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_cor_pttrn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_cor_pttrn.dir\\src\\handlers.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\COR\\src\\handlers.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/COR/src/handlers.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/COR",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_cor_pttrn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_cor_pttrn.dir\\src\\handlers.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\COR\\src\\handlers.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/COR/src/handlers.cpp",
   "output": "COR/CMakeFiles/os_cw_cor_pttrn.dir/src/handlers.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/logger/client_logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_clnt_lggr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_lggr_clnt_lggr.dir\\src\\client_logger.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\logger\\client_logger\\src\\client_logger.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/client_logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_clnt_lggr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_lggr_clnt_lggr.dir\\src\\client_logger.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\client_logger\\src\\client_logger.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger.cpp",
   "output": "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/logger/client_logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_clnt_lggr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_lggr_clnt_lggr.dir\\src\\client_logger_builder.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\logger\\client_logger\\src\\client_logger_builder.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger_builder.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/client_logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_clnt_lggr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_lggr_clnt_lggr.dir\\src\\client_logger_builder.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\client_logger\\src\\client_logger_builder.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/client_logger/src/client_logger_builder.cpp",
   "output": "logger/client_logger/CMakeFiles/os_cw_lggr_clnt_lggr.dir/src/client_logger_builder.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/logger/logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\os_cw_lggr_lggr.dir\\src\\logger.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\logger\\logger\\src\\logger.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/logger/logger/src/logger.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\os_cw_lggr_lggr.dir\\src\\logger.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\logger\\src\\logger.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/logger/src/logger.cpp",
   "output": "logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/logger/logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\os_cw_lggr_lggr.dir\\src\\logger_builder.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\logger\\logger\\src\\logger_builder.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/logger/logger/src/logger_builder.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\os_cw_lggr_lggr.dir\\src\\logger_builder.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\logger\\src\\logger_builder.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/logger/src/logger_builder.cpp",
   "output": "logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_builder.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/logger/logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\os_cw_lggr_lggr.dir\\src\\logger_guardant.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\logger\\logger\\src\\logger_guardant.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/logger/logger/src/logger_guardant.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_lggr.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\os_cw_lggr_lggr.dir\\src\\logger_guardant.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\logger\\src\\logger_guardant.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/logger/src/logger_guardant.cpp",
   "output": "logger/logger/CMakeFiles/os_cw_lggr_lggr.dir/src/logger_guardant.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/logger/logger_singleton",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_sngltn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\os_cw_lggr_sngltn.dir\\src\\singleton.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\logger\\logger_singleton\\src\\singleton.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/logger/logger_singleton/src/singleton.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/logger_singleton",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_sngltn.dir/includes_CXX.rsp -g -std=c++14 -o CMakeFiles\\os_cw_lggr_sngltn.dir\\src\\singleton.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\logger_singleton\\src\\singleton.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/logger_singleton/src/singleton.cpp",
   "output": "logger/logger_singleton/CMakeFiles/os_cw_lggr_sngltn.dir/src/singleton.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/logger/server_logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_srvr_lggr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_lggr_srvr_lggr.dir\\src\\server_logger.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\logger\\server_logger\\src\\server_logger.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/logger/server_logger/src/server_logger.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/server_logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_srvr_lggr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_lggr_srvr_lggr.dir\\src\\server_logger.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\server_logger\\src\\server_logger.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/server_logger/src/server_logger.cpp",
   "output": "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/logger/server_logger",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_srvr_lggr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_lggr_srvr_lggr.dir\\src\\server_logger_builder.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\logger\\server_logger\\src\\server_logger_builder.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/logger/server_logger/src/server_logger_builder.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/server_logger",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_lggr_srvr_lggr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_lggr_srvr_lggr.dir\\src\\server_logger_builder.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\server_logger\\src\\server_logger_builder.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/server_logger/src/server_logger_builder.cpp",
   "output": "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger_builder.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/flyweight/flyweight_string",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_flwght_str.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_flwght_str.dir\\src\\flyweight_string.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\flyweight\\flyweight_string\\src\\flyweight_string.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/flyweight/flyweight_string/src/flyweight_string.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/logger/WIN_logging_server",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_wn_lggng_srvr.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_wn_lggng_srvr.dir\\src\\WIN_logging_server.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\logger\\WIN_logging_server\\src\\WIN_logging_server.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/WIN_logging_server/src/WIN_logging_server.cpp",
+  "output": "logger/WIN_logging_server/CMakeFiles/os_cw_wn_lggng_srvr.dir/src/WIN_logging_server.cpp.obj"
+},
+{
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/flyweight/flyweight_string",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_flwght_str.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_flwght_str.dir\\src\\flyweight_string.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\flyweight\\flyweight_string\\src\\flyweight_string.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/flyweight/flyweight_string/src/flyweight_string.cpp",
   "output": "flyweight/flyweight_string/CMakeFiles/os_cw_flwght_str.dir/src/flyweight_string.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/flyweight/flyweight_string/singleton",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_flwght_sngltn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_flwght_sngltn.dir\\src\\singleton.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\flyweight\\flyweight_string\\singleton\\src\\singleton.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/flyweight/flyweight_string/singleton/src/singleton.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/flyweight/flyweight_string/singleton",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_flwght_sngltn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_flwght_sngltn.dir\\src\\singleton.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\flyweight\\flyweight_string\\singleton\\src\\singleton.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/flyweight/flyweight_string/singleton/src/singleton.cpp",
   "output": "flyweight/flyweight_string/singleton/CMakeFiles/os_cw_flwght_sngltn.dir/src/singleton.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/relevant_type",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_rlvnt_tp.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_rlvnt_tp.dir\\src\\user.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\relevant_type\\src\\user.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/relevant_type/src/user.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/relevant_type",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_rlvnt_tp.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_rlvnt_tp.dir\\src\\user.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\relevant_type\\src\\user.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/relevant_type/src/user.cpp",
   "output": "relevant_type/CMakeFiles/os_cw_rlvnt_tp.dir/src/user.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/interaction",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_ntrctn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_ntrctn.dir\\src\\interaction.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\interaction\\src\\interaction.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/interaction/src/interaction.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/interaction",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_ntrctn.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_ntrctn.dir\\src\\interaction.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\interaction\\src\\interaction.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/interaction/src/interaction.cpp",
   "output": "interaction/CMakeFiles/os_cw_ntrctn.dir/src/interaction.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/test",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_test.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_test.dir\\mrn.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\test\\mrn.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/test/mrn.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/test",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_test.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_test.dir\\mrn.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\test\\mrn.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/test/mrn.cpp",
   "output": "test/CMakeFiles/os_cw_test.dir/mrn.cpp.obj"
 },
 {
-  "directory": "X:/Coding/CPP/CourseWorkOpS/build/DC_utilities",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_dc_utlts.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_dc_utlts.dir\\src\\dc_utilities.cpp.obj -c X:\\Coding\\CPP\\CourseWorkOpS\\DC_utilities\\src\\dc_utilities.cpp",
-  "file": "X:/Coding/CPP/CourseWorkOpS/DC_utilities/src/dc_utilities.cpp",
+  "directory": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/build/DC_utilities",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe  @CMakeFiles/os_cw_dc_utlts.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\os_cw_dc_utlts.dir\\src\\dc_utilities.cpp.obj -c C:\\Users\\Asus\\Desktop\\Coding\\CPP\\CourseWorkOpS\\DC_utilities\\src\\dc_utilities.cpp",
+  "file": "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/DC_utilities/src/dc_utilities.cpp",
   "output": "DC_utilities/CMakeFiles/os_cw_dc_utlts.dir/src/dc_utilities.cpp.obj"
 }
 ]

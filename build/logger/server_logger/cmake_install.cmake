@@ -1,4 +1,4 @@
-# Install script for directory: X:/Coding/CPP/CourseWorkOpS/logger/server_logger
+# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/server_logger
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

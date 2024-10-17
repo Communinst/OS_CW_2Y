@@ -1,4 +1,4 @@
-# Install script for directory: X:/Coding/CPP/CourseWorkOpS/allocator/allocator_boundary_tags
+# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/allocator/allocator_boundary_tags
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

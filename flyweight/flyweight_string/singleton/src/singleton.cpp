@@ -35,7 +35,9 @@ void flyweight_string_singleton::update()
     {
         if (iter->second.use_count() == 1)
         {
-            _pool.erase(iter->first);
+            auto tmp = iter;
+            ++iter;
+            _pool.erase(tmp->first);
         }
         //To prevent ovelapping
         else

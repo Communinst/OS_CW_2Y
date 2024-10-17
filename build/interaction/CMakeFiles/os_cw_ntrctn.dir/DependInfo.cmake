@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "X:/Coding/CPP/CourseWorkOpS/interaction/src/interaction.cpp" "interaction/CMakeFiles/os_cw_ntrctn.dir/src/interaction.cpp.obj" "gcc" "interaction/CMakeFiles/os_cw_ntrctn.dir/src/interaction.cpp.obj.d"
+  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/interaction/src/interaction.cpp" "interaction/CMakeFiles/os_cw_ntrctn.dir/src/interaction.cpp.obj" "gcc" "interaction/CMakeFiles/os_cw_ntrctn.dir/src/interaction.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

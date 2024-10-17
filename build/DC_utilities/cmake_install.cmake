@@ -1,4 +1,4 @@
-# Install script for directory: X:/Coding/CPP/CourseWorkOpS/DC_utilities
+# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/DC_utilities
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

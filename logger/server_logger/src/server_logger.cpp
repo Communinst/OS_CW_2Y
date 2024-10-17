@@ -82,7 +82,7 @@ logger const *server_logger::log(
                 #endif
                 
                 #ifdef _WIN32
-                bool tmp = WriteFile(_hFile, &msg, sizeof(msg_t), (LPDWORD) NULL, (LPOVERLAPPED) NULL);
+                    bool tmp = WriteFile(_hFile, &msg, sizeof(msg_t), (LPDWORD) NULL, (LPOVERLAPPED) NULL);
                 #endif
             }
             

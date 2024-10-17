@@ -42,7 +42,7 @@ bool chain_of_responsibility::request_with_command::handle(const std::string &re
         
     }
     // Handles chain inside of DB
-    else
+    else if ((request != "" && user_date != -1) || request == "")
     {
         struct tm buff;
         std::istringstream iss(_target_action->get_date());

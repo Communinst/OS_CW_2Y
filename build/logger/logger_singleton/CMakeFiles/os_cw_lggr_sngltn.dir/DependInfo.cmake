@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "X:/Coding/CPP/CourseWorkOpS/logger/logger_singleton/src/singleton.cpp" "logger/logger_singleton/CMakeFiles/os_cw_lggr_sngltn.dir/src/singleton.cpp.obj" "gcc" "logger/logger_singleton/CMakeFiles/os_cw_lggr_sngltn.dir/src/singleton.cpp.obj.d"
+  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/logger_singleton/src/singleton.cpp" "logger/logger_singleton/CMakeFiles/os_cw_lggr_sngltn.dir/src/singleton.cpp.obj" "gcc" "logger/logger_singleton/CMakeFiles/os_cw_lggr_sngltn.dir/src/singleton.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

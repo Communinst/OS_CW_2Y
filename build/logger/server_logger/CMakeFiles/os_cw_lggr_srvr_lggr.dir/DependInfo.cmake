@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "X:/Coding/CPP/CourseWorkOpS/logger/server_logger/src/server_logger.cpp" "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger.cpp.obj" "gcc" "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger.cpp.obj.d"
-  "X:/Coding/CPP/CourseWorkOpS/logger/server_logger/src/server_logger_builder.cpp" "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger_builder.cpp.obj" "gcc" "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger_builder.cpp.obj.d"
+  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/server_logger/src/server_logger.cpp" "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger.cpp.obj" "gcc" "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger.cpp.obj.d"
+  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/server_logger/src/server_logger_builder.cpp" "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger_builder.cpp.obj" "gcc" "logger/server_logger/CMakeFiles/os_cw_lggr_srvr_lggr.dir/src/server_logger_builder.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -109,28 +109,28 @@ namespace command_pattern
 
 #pragma region COMMAND PARENT PROPS
 
-    class command 
-    {
+        class command 
+        {
 
-    protected:
+        protected:
 
-        std::string _date;
+            std::string _date;
 
-    public:
+        public:
 
-        command (const std::string data = "");
+            command (const std::string data = "");
 
-        virtual ~command() = default;
+            virtual ~command() = default;
 
-    public:
+        public:
 
-        std::string get_date () const noexcept;
+            std::string get_date () const noexcept;
 
-        virtual bool can_execute(const std::string &) = 0;
+            virtual bool can_execute(const std::string &) = 0;
 
-        virtual void execute () = 0;
+            virtual void execute () = 0;
 
-    };
+        };
 
 #pragma endregion COMMAND PARENT PROPS
 

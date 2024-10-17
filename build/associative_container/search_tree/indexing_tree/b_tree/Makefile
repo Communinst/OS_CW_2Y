@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = X:\CMake\bin\cmake.exe
+CMAKE_COMMAND = C:\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = X:\CMake\bin\cmake.exe -E rm -f
+RM = C:\CMake\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = X:\Coding\CPP\CourseWorkOpS
+CMAKE_SOURCE_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
+CMAKE_BINARY_DIR = C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = X:\Coding\CPP\CourseWorkOpS\build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	X:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\CMake\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	X:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\CMake\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles X:\Coding\CPP\CourseWorkOpS\build\associative_container\search_tree\indexing_tree\b_tree\\CMakeFiles\progress.marks
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/all
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\associative_container\search_tree\indexing_tree\b_tree\\CMakeFiles\progress.marks
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/clean
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/preinstall
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/preinstall
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule:
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule
 .PHONY : associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr: associative_container/search_tree/ind
 
 # fast build rule for target.
 os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr/fast:
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(MAKE) $(MAKESILENT) -f associative_container\search_tree\indexing_tree\b_tree\CMakeFiles\os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir\build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build
 .PHONY : os_cw_assctv_cntnr_srch_tr_indxng_tr_b_tr/fast
 
 # Help Target
@@ -149,6 +149,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d X:\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\Asus\Desktop\Coding\CPP\CourseWorkOpS\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

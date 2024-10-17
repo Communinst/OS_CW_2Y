@@ -67,7 +67,7 @@ bool command_pattern::add_pool::can_execute (const std::string &request)
 
     iss >> command;
 
-    std::cout << command.c_str() << std::endl;
+    //std::cout << command.c_str() << std::endl;
 
     if (command != "ADDPOOL")
     {
@@ -709,7 +709,7 @@ void command_pattern::obtain_user::execute ()
 {
 
     logger_singleton::get_singleton()->get_logger()->log("OBTAINUSER initiated execution procedure.", logger::severity::trace);
-    db_storage::get_singleton()->obtain_user_data(_pool_name, _schema_name, _collection_name, _user_name);
+    user u = db_storage::get_singleton()->obtain_user_data(_pool_name, _schema_name, _collection_name, _user_name);
 
 }
 

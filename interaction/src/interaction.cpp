@@ -62,7 +62,9 @@ int is_valid_time_ISO_8601(const char *dateString) {
 int interaction::dialog (int argc, char **argv)
 {
 
-    std::cout << "Greetings. Shall we get started?. y/n" << std::endl;
+    logger_singleton::get_singleton()->get_logger()->log("Dialog initiated", logger::severity::information);
+
+    std::cout << "Greetings. Shall we get started?. yes/no" << std::endl;
 
     try
     {
@@ -70,7 +72,8 @@ int interaction::dialog (int argc, char **argv)
     }
     catch (const std::exception &e)
     {
-        //logger_singleton::get_singleton()->get_logger()->log("Start wasn't initiated. System shut down.", logger::severity::trace);
+        logger_singleton::get_singleton()->get_logger()->log("Start wasn't initiated. System shut down.", logger::severity::trace);
+        return 1;
     }
 
     
@@ -79,6 +82,7 @@ int interaction::dialog (int argc, char **argv)
 
     for (auto i = 1; i < argc; i++)
     {
+
         handle_requests_via_path (argv[i]);
     }
 
@@ -101,18 +105,18 @@ void interaction::initiate_start ()
     while (std::getline(std::cin, buff_answer))
     {
         
-        if (buff_answer == "y")
+        if (buff_answer == "yes")
         {
             logger_singleton::get_singleton()->get_logger()->log("Initiating setup process", logger::severity::trace);
             break;
         }
-        else if (buff_answer == "n")
+        else if (buff_answer == "no")
         {
             throw (std::logic_error("Start wasn't initiated. System shut down."));
         }
         else
         {
-            std::cout << "Please answer y/n" << std::endl;
+            std::cout << "Please answer yes/no" << std::endl;
         }
     }
 }
@@ -227,15 +231,22 @@ void interaction::handle_request (std::string &request)
 
     // If received command is related to obtain process
     chain.~request_with_command_chain();
-
-    //db_storage::get_singleton()->clear();
+    db_storage::get_singleton()->clear();
+    
     std::string fixed_time;
+
+    std::cout << "Clarify the date: YYYY-MM-DDTHH:MM:SSZ" << std::endl;
+
+    std::getline(std::cin, fixed_time);
 
     chain 
         .add_handler(new command_pattern::obtain_user())
         .add_handler(new command_pattern::obtain_user_between())
         .add_handler(new command_pattern::obtain_min_user())
         .add_handler(new command_pattern::obtain_max_user());
+
+    chain.handle(request, fixed_time);
+    
 }
 
 

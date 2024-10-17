@@ -1,4 +1,4 @@
-# Install script for directory: X:/Coding/CPP/CourseWorkOpS/logger/logger_singleton
+# Install script for directory: C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/logger/logger_singleton
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

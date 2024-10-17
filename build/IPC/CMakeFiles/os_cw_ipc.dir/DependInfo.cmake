@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "X:/Coding/CPP/CourseWorkOpS/IPC/src/ipc.cpp" "IPC/CMakeFiles/os_cw_ipc.dir/src/ipc.cpp.obj" "gcc" "IPC/CMakeFiles/os_cw_ipc.dir/src/ipc.cpp.obj.d"
+  "C:/Users/Asus/Desktop/Coding/CPP/CourseWorkOpS/IPC/src/ipc.cpp" "IPC/CMakeFiles/os_cw_ipc.dir/src/ipc.cpp.obj" "gcc" "IPC/CMakeFiles/os_cw_ipc.dir/src/ipc.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
